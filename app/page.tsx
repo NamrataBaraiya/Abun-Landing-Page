@@ -2,64 +2,75 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+    <main className="w-full py-12 font-Geist flex min-h-screen flex-col items-center justify-center bg-white dark:bg-black sm:items-start">
+       
+      <section className="py-30 flex flex-col w-[1200px] justify-center items-center text-center gap-6">
+        <div className="w-[1100px] flex flex-row items-center justify-between gap-6 text-center">
+          
+          <div className="flex flex-col items-center gap-2 text-center">
+            <Image src="/img/rating-star.png" alt="Rating Star" width={115} height={20} />
+            <p className="text-[#d9cec1] text-[20px]">“biggest value bomb”</p>
+          </div>
+
+          <div className="flex flex-col items-center gap-2 text-center">
+            <Image src="/img/rating-star.png" alt="Rating Star" width={115} height={20} />
+            <p className="text-[#665542] text-[20px]">“my entire team can’t stop using it”</p>
+          </div>
+
+          <div className="flex flex-col items-center gap-2 text-center">
+            <Image src="/img/rating-star.png" alt="Rating Star" width={115} height={20} />
+            <p className="text-[#665542] text-[20px]">“helped us scale & grow”</p>
+          </div> 
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
+
+        <h1 className="font-sans text-[60px] font-bold leading-[1.1em] tracking-[-1px] text-black">
+          The All-In-One Toolkit for <br /> SEO & Growth Marketing.
+        </h1>
+        <p className="text-[28px] text-black font-medium">
+          Used by 5,325 Marketers, Founders, SEO Experts
+          <br />
+          to Drive Traffic, Generate Leads, Rank Faster & Achieve Solid Business Growth
+        </p>
+
+        <button className="text-black text-[20px] transition-transform duration-300 ease-out hover:-translate-y-2 bg-[#FACE49] rounded-[11px] px-[30px] py-[20px]">
+          <a>Claim Your Free Account ➔</a>
+        </button> 
+
+        <p className="font-sans text-[18px] font-normal leading-[1.1em] tracking-[0px] text-[#00000099]">
+          Free Accounts available only for a Limited Time
+        </p>   
+        
+        <div className="flex flex-row items-center gap-2 text-center">
+          <Image src="/img/image-123.png" alt="" width={270} height={90} />
+          <Image src="/img/nvidia-inception-program-badge-rgb-for-screen.png" alt="" width={152} height={66} />
         </div>
-      </main>
-    </div>
+
+      </section>
+
+{/*-------------------------------------- section 2 - AI SEO------------------------------------- */}
+      <section className="py-30 flex flex-col w-[1200px] justify-center items-center text-center gap-4 bg-gradient-to-b from-[#F1F1F9]/80 to-[#FFFFFF]/100">
+        <p className="text-[18px] font-medium leading-[1.1em] tracking-[-0.5px] text-[#4A4583]">AI SEO & Marketing Tools</p>
+        <h2 className="text-[48px] font-bold leading-[1.1em] tracking-[-1px] text-black">Start Scaling your Traffic</h2>
+
+        <div className="grid grid-cols-3 grid-rows-9 gap-4 items-center justify-between text-center">
+          
+          <div className="flex p-[25px] flex-col gap-2 bg-white border border-[#D2D2EB] rounded-[14px] shadow-[0_3px_3px_0_rgba(19,48,66,0.07)] ">
+            <Image className="p-[10px] bg-[#f1f1f9] rounded-[10px]" src="/img/image-123.png" alt="Rating Star" width={40} height={40} />
+            <p className="text-[20px] font-bold">AI Articles</p>
+            <p className="text-[18px] font-normal">
+              Human-like Articles that don't suck. All types of Articles Supported.
+            </p>
+          </div>
+
+          <div className="flex p-[25px] flex-col gap-2 bg-white border border-[#D2D2EB] rounded-[14px] shadow-[0_3px_3px_0_rgba(19,48,66,0.07)] ">
+            <Image className="p-[10px] bg-[#f1f1f9] rounded-[10px]" src="/img/image-123.png" alt="Rating Star" width={40} height={40} />
+            <p className="text-[20px] font-bold">AI Blog Automation</p>
+            <p className="text-[18px] font-normal">Automate your blog from months to a complete year.
+            </p>
+          </div>
+
+        </div>
+      </section>
+    </main>
   );
 }

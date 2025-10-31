@@ -1,4 +1,30 @@
 @import "tailwindcss";
+@font-face {
+  font-family: "Geist";
+  src: url("/fonts/geist/Geist-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Geist";
+  src: url("/fonts/geist/Geist-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("/fonts/sfpro/SF-Pro-Display-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "SF Pro Display";
+  src: url("/fonts/sfpro/SF-Pro-Display-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
 
 :root {
   --background: #ffffff;
