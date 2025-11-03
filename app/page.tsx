@@ -1,9 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import ImageCarousel from "@/components/imagecarousel";
-
-
+import ImageCarousel from "./components/ImageCarousel";
 
 export default function Home() {
   // Counter logic
@@ -251,7 +249,7 @@ Guest Post Finder</p>
       </section>
 
       {/* ========================== SECTION 3 ========================== */}
-      <section className="py-30 w-full flex flex-col justify-center items-center text-center bg-gradient-to-b from-[#F1F1F9]/80 to-[#FFFFFF]/100">
+      <section className="py-30 w-full flex flex-col justify-center items-center text-center bg-white">
         <div className="max-w-[1200px] w-full flex flex-col justify-center items-center gap-6 px-6">
           
           {/* Animated Counter */}
@@ -264,20 +262,34 @@ Guest Post Finder</p>
             <p className="text-[28px] text-black font-medium mt-3 mt-6">
               Our users love us 2.6 Billion.<br/><br/>That’s the amount of AI/LLM tokens used cumulatively by our users.
             </p>
-            <h2 className="text-[48px] font-bold leading-[1.1em] tracking-[-1px] text-black">All Good things Packed into One Software</h2>  
+            <ImageCarousel />
+            <h2 className="py-9 text-[40px] font-bold leading-[1.1em] tracking-[-1px] text-black">All Good things Packed into One Software</h2>  
 
-            <div className="w-full p-6 grid grid-cols-2 gap-12 rounded-[20px] bg-[#FAF1E3]">
-              <div className="flex flex-col gap-2">
-                <h3 className="font-[35px] text-[#4F340A] leading-[1.1em] font-medium">We integrate with all the  latest tech, so you are not left behind.</h3>
-                <p className="font-[20px] text-[#4F340A] leading-[1.4em]" >Our system is built to support top platforms today, and ready for what’s next tomorrow.</p>
+            <div className="w-full p-16 grid space-between grid-cols-2 gap-[80px] rounded-[20px] bg-[#FAF1E3] ">
+              <div className="flex flex-col gap-[20px] text-left">
+                <h3 className="text-[35px] text-[#4F340A] leading-[1.1em] font-bold">We integrate with all the  latest tech, so you are not left behind.</h3>
+                <p className="text-[20px] text-[#8A5E19] leading-[1.4em]" >Our system is built to support top platforms<br/> today, and ready for what’s next tomorrow.</p>
               </div>
-
-              <div>
-                <Image src="/img/Software-pack.png" alt="Software pack"  />
-              </div>  
-                      
+              <div className="flex justify-end">
+                <Image src="/img/Software-pack.png" alt="Software Pack" width={440} height={300} className="rounded-lg text-right" />
+              </div>                          
             </div>  
 
+            <div className="w-full grid grid-cols-2 gap-4">
+              <div className="flex flex-col p-16 gap-[20px] text-left rounded-[20px] bg-[#FAF1E3] ">
+                <p className="text-[35px] text-[#4F340A] leading-[1.1em] font-bold">Full Fledged Integrations</p>
+                <p className="text-[20px] text-[#8A5E19] leading-[1.4em]" >So simple, you’ll forget it’s even integrated. Built for teams that hate complexity but love when things just work.</p>
+                <div className="flex justify-center">
+                  <a href="https://abun.com/integrations" className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 hover:bg-blue-700 hover:gap-3">
+                    <span>View Integrations ></span>
+                    {/* < className="text-xs" aria-hidden="true" /> */}
+                  </a>
+                </div>
+              </div>
+              <div className="flex justify-end p-16">
+                <Image src="/img/Software-pack.png" alt="Software Pack" width={440} height={300} className="rounded-lg text-right" />
+              </div>                          
+            </div>  
 
 
 
