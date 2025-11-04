@@ -7,15 +7,13 @@ import "swiper/css";
 
 export default function ImageCarousel() {
   const images = [
-    "/counter-crausel-images/cropped-Gu-c-22.png",
-    "/counter-crausel-images/Group-1 (1).png",
-    "/counter-crausel-images/GrowMeOrganicLogo.webp",
-    "/counter-crausel-images/Jetting.svg",
-    "/counter-crausel-images/logo-3 (1).avif",
-    "/counter-crausel-images/Titech (1).webp",
-    "/counter-crausel-images/Zappy-logo-2 (1).webp",
-    "/counter-crausel-images/Software-pack17.png",
-    "/counter-crausel-images/Software-pack18.png",
+    "/counter-carousel-images/cropped-Gu-c-22.png",
+    "/counter-carousel-images/Group-1.png",
+    "/counter-carousel-images/GrowMeOrganicLogo.webp",
+    "/counter-carousel-images/Jetting.svg",
+    "/counter-carousel-images/logo-3.avif",
+    "/counter-carousel-images/Titech.webp",
+    "/counter-carousel-images/Zappy-logo-2.webp",
   ];
 
   return (
@@ -40,12 +38,21 @@ export default function ImageCarousel() {
         >
           {images.map((src, index) => (
             <SwiperSlide key={index}>
-              <div className="flex justify-center items-center">
+              <div
+                className="
+                  flex 
+                  justify-center 
+                  items-center 
+                  h-[120px] 
+                  w-full
+                "
+              >
                 <Image
                   src={src}
                   alt={`Software pack ${index + 1}`}
-                  width={150}
-                  height={150}
+                  width={130}
+                  height={100}
+                  unoptimized
                   className="object-contain transition-transform duration-300 hover:scale-105"
                 />
               </div>

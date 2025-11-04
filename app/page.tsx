@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import ImageCarousel from "./components/ImageCarousel";
+import ImageCarousel from "./components/imagecarousel";
 
 export default function Home() {
   // Counter logic
@@ -26,21 +26,13 @@ export default function Home() {
   const formattedCount = count.toLocaleString("en-US");
 
   return (
-<<<<<<< HEAD
     <main className="w-full py-12 font-Geist flex min-h-screen flex-col items-center justify-center bg-white text-black dark:bg-black">
-=======
-    <main className="w-full py-12 font-Geist flex min-h-screen flex-col items-center justify-center bg-white dark:bg-black">
->>>>>>> 0ddea39272ed4c53f2637bb5bed94efcd1dc9060
       
       {/* SECTION 1 */}
       <section className="py-30 w-full flex flex-col justify-center items-center text-center gap-6">
         <div className="max-w-[1200px] w-full flex flex-col justify-center items-center gap-6 px-6">
           
-<<<<<<< HEAD
           <div className="w-[950px] max-w-[1200px] flex flex-row flex-wrap items-center justify-between text-center">
-=======
-          <div className="w-full max-w-[1200px] flex flex-row flex-wrap items-center justify-center gap-6 text-center">
->>>>>>> 0ddea39272ed4c53f2637bb5bed94efcd1dc9060
             
             <div className="flex flex-col items-center gap-2 text-center">
               <Image src="/img/rating-star.png" alt="Rating Star" width={115} height={20} />
@@ -62,11 +54,7 @@ export default function Home() {
             The All-In-One Toolkit for <br /> SEO & Growth Marketing.
           </h1>
 
-<<<<<<< HEAD
           <p className="text-[32px] text-black font-medium">
-=======
-          <p className="text-[28px] text-black font-medium">
->>>>>>> 0ddea39272ed4c53f2637bb5bed94efcd1dc9060
             Used by 5,325 Marketers, Founders, SEO Experts
             <br />
             to Drive Traffic, Generate Leads, Rank Faster & Achieve Solid Business Growth
@@ -81,11 +69,7 @@ export default function Home() {
           </p>
 
           <div className="flex flex-row items-center justify-center gap-2 text-center">
-<<<<<<< HEAD
             <Image className="pt-2" src="/img/image-123.png" alt="" width={265} height={80} />
-=======
-            <Image src="/img/image-123.png" alt="" width={265} height={80} />
->>>>>>> 0ddea39272ed4c53f2637bb5bed94efcd1dc9060
             <Image src="/img/nvidia-inception-program-badge-rgb-for-screen.png" alt="" width={152} height={66} />
           </div>
         </div>
@@ -94,17 +78,10 @@ export default function Home() {
       {/* SECTION 2 */}
       <section className="py-30 w-full flex flex-col justify-center items-center text-center bg-gradient-to-b from-[#F1F1F9]/80 to-[#FFFFFF]/100">
         <div className="max-w-[1200px] w-full flex flex-col justify-center items-center gap-6 px-6">
-<<<<<<< HEAD
           <p className="text-[18px] font-medium leading-[1.1em] tracking-[-0.5px] text-[#4A4583]">AI SEO & Marketing Tools</p>
           <h2 className="text-[48px] font-bold leading-[1.1em] tracking-[-1px] text-black">Start Scaling your Traffic</h2>
 
-          <div className="w-full pt-4 max-w-7xl grid grid-cols-3 gap-6 items-start justify-center text-center ">
-=======
-          <p className="text-[18px] font-[500] leading-[1.1em] tracking-[-0.5px] text-[#4A4583]">AI SEO & Marketing Tools</p>
-          <h2 className="text-[48px] font-bold leading-[1.1em] tracking-[-1px] text-black">Start Scaling your Traffic</h2>
-
-          <div className="w-full max-w-[1280px] grid grid-cols-3 gap-6 items-start justify-center text-center ">
->>>>>>> 0ddea39272ed4c53f2637bb5bed94efcd1dc9060
+          <div className="w-full max-w-7xl grid grid-cols-3 gap-6 items-start justify-center text-center ">
             {/* 1 */}
             <div className="flex p-[25px] min-h-[210px] flex-col gap-3 item-left text-left bg-[#FFFFFF] border border-[#D2D2EB] rounded-[14px] shadow-[0_3px_3px_0_rgba(19,48,66,0.07)] transition-transform duration-300 hover:scale-[1.02] hover:cursor-default">
               <Image className="p-2.5 bg-[#f1f1f9] rounded-[10px]" src="/img/Script-2-Streamline-Plump.png" alt="AI Articles" width={40} height={40} />
@@ -257,21 +234,13 @@ Guest Post Finder</p>
             </div>
             {/* 24 */}
             <div className="flex p-[25px] min-h-[210px] flex-col gap-3 item-left text-left bg-white border border-[#D2D2EB] rounded-[14px] shadow-[0_3px_3px_0_rgba(19,48,66,0.07)] transition-transform duration-300 hover:scale-[1.02] hover:cursor-default">
-<<<<<<< HEAD
               <Image className="p-2.5 bg-[#f1f1f9] rounded-[10px]" src="/img/Notepad.png" alt="Content Calender" width={40} height={40} />
-=======
-              <Image className="p-2.5 bg-[#f1f1f9] rounded-[10px]" src="/img/Notepad.png" alt="AI Blog Automation" width={40} height={40} />
->>>>>>> 0ddea39272ed4c53f2637bb5bed94efcd1dc9060
               <p className="text-[20px] font-bold">Content Calender</p>
               <p className="text-[16px] font-normal">Plan like a pro. Organize and schedule all your content for consistent publishing and SEO wins.</p>
             </div>
             {/* 25 */}
              <div className="flex p-[25px] min-h-[210px] flex-col gap-3 item-left text-left bg-white border border-[#D2D2EB] rounded-[14px] shadow-[0_3px_3px_0_rgba(19,48,66,0.07)] transition-transform duration-300 hover:scale-[1.02] hover:cursor-default">
-<<<<<<< HEAD
               <Image className="p-2.5 bg-[#f1f1f9] rounded-[10px]" src="/img/No-Word-Wrap.png" alt="AI SEO Tracker" width={40} height={40} />
-=======
-              <Image className="p-2.5 bg-[#f1f1f9] rounded-[10px]" src="/img/No-Word-Wrap.png" alt="AI Blog Automation" width={40} height={40} />
->>>>>>> 0ddea39272ed4c53f2637bb5bed94efcd1dc9060
               <p className="text-[20px] font-bold">AI SEO Tracker</p>
               <p className="text-[16px] font-normal">Smarter tracking, better rankings. Let AI monitor your SEO performance and spot winning opportunities.</p>
             </div>
@@ -290,33 +259,22 @@ Guest Post Finder</p>
                 {formattedCount}
               </span>
             </div>
-<<<<<<< HEAD
             <p className="text-[28px] text-black font-medium mt-6">
-=======
-            <p className="text-[28px] text-black font-medium mt-3 mt-6">
->>>>>>> 0ddea39272ed4c53f2637bb5bed94efcd1dc9060
               Our users love us 2.6 Billion.<br/><br/>That’s the amount of AI/LLM tokens used cumulatively by our users.
             </p>
             <ImageCarousel />
             <h2 className="py-9 text-[40px] font-bold leading-[1.1em] tracking-[-1px] text-black">All Good things Packed into One Software</h2>  
-<<<<<<< HEAD
           
           </div>
 
           <div className="w-full p-16 grid space-between grid-cols-2 gap-20 rounded-[20px] bg-[#FAF1E3] ">
               <div className="flex flex-col gap-5 text-left">
-=======
-
-            <div className="w-full p-16 grid space-between grid-cols-2 gap-[80px] rounded-[20px] bg-[#FAF1E3] ">
-              <div className="flex flex-col gap-[20px] text-left">
->>>>>>> 0ddea39272ed4c53f2637bb5bed94efcd1dc9060
                 <h3 className="text-[35px] text-[#4F340A] leading-[1.1em] font-bold">We integrate with all the  latest tech, so you are not left behind.</h3>
                 <p className="text-[20px] text-[#8A5E19] leading-[1.4em]" >Our system is built to support top platforms<br/> today, and ready for what’s next tomorrow.</p>
               </div>
               <div className="flex justify-end">
                 <Image src="/img/Software-pack.png" alt="Software Pack" width={440} height={300} className="rounded-lg text-right" />
               </div>                          
-<<<<<<< HEAD
              
           </div>
 
@@ -380,29 +338,6 @@ Guest Post Finder</p>
             Free Accounts available only for a Limited Time
           </p>
 
-=======
-            </div>  
-
-            <div className="w-full grid grid-cols-2 gap-4">
-              <div className="flex flex-col p-16 gap-[20px] text-left rounded-[20px] bg-[#FAF1E3] ">
-                <p className="text-[35px] text-[#4F340A] leading-[1.1em] font-bold">Full Fledged Integrations</p>
-                <p className="text-[20px] text-[#8A5E19] leading-[1.4em]" >So simple, you’ll forget it’s even integrated. Built for teams that hate complexity but love when things just work.</p>
-                <div className="flex justify-center">
-                  <a href="https://abun.com/integrations" className="inline-flex items-center gap-2 bg-blue-600 text-white px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 hover:bg-blue-700 hover:gap-3">
-                    <span>View Integrations ></span>
-                    {/* < className="text-xs" aria-hidden="true" /> */}
-                  </a>
-                </div>
-              </div>
-              <div className="flex justify-end p-16">
-                <Image src="/img/Software-pack.png" alt="Software Pack" width={440} height={300} className="rounded-lg text-right" />
-              </div>                          
-            </div>  
-
-
-
-          </div>
->>>>>>> 0ddea39272ed4c53f2637bb5bed94efcd1dc9060
         </div>
       </section>
 
