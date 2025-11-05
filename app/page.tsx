@@ -1,7 +1,7 @@
 "use client";
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import ImageCarousel from "./components/imagecarousel";
+import ImageCarousel from "./components/ImageCarousel";
 
 export default function Home() {
   // Counter logic
