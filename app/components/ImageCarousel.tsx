@@ -44,13 +44,13 @@ export default function ImageCarousel() {
                   justify-center 
                   items-center 
                   h-[120px] 
-                  w-full                 
+                  w-full
                 "
               >
                 <Image
                   src={src}
                   alt={`Software pack ${index + 1}`}
-                  width={100}
+                  width={130}
                   height={100}
                   unoptimized
                   className="object-contain transition-transform duration-300 hover:scale-105"
