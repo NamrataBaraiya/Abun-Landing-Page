@@ -50,7 +50,7 @@ export default function ImageCarousel() {
                 <Image
                   src={src}
                   alt={`Software pack ${index + 1}`}
-                  width={130}
+                  width={150}
                   height={100}
                   unoptimized
                   className="object-contain transition-transform duration-300 hover:scale-105"
