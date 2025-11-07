@@ -3,6 +3,8 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import ImageCarousel from "./components/ImageCarousel";
 import PriceTab from "./components/PriceTab";
+import FAQ from "./components/Faq";
+import Testimonials from "./components/Testimonials"; 
 
 export default function Home() {
   // Counter logic
@@ -341,22 +343,23 @@ Guest Post Finder</p>
 
         </div>
       </section>
-{/* ========================== SECTION 4 ========================== */}
+{/*================================ SECTION 4 - Testimonials =============================================*/}
+      <Testimonials />
+{/* ========================== SECTION 5 - Price Table ========================== */}
       <section className="py-30 w-full flex flex-col justify-center items-center text-center bg-white">
         <div className="max-w-[1350px] w-full flex flex-col justify-center items-center gap-6 px-6">
           <h2 className="pt-16 pb-6 text-[48px] text-black font-bold leading-[1.1em]">Access All Tools for One Price.</h2>
           
 {/*------------------------------------------price table component----------------------------------------------------------------------------------------------------------  */}
-          <PriceTab /> 
-          
-
-
-          
-
-
-        
+          <PriceTab />  
         </div>
       </section>    
+{/* ============================== SECTION 6 - FAQ ============================================ */}
+      <FAQ /> 
+      
+
+
+
 
 
     </main>
