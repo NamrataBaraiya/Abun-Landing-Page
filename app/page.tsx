@@ -7,6 +7,7 @@ import PriceTab from "./components/PriceTab";
 import FAQ from "./components/Faq";
 import Testimonials from "./components/Testimonials"; 
 import TextSlider from "./components/TextSlider";
+import Footer from "./components/Footer";
 
 export default function Home() {
   // Counter logic
@@ -46,7 +47,7 @@ export default function Home() {
 
             <div className="flex flex-col items-center gap-2 text-center">
               <Image src="/img/rating-star.png" alt="Rating Star" width={115} height={20} />
-              <p className="text-[rgb(102,85,66)] text-[20px]">“my entire team can’t stop using it”</p>
+              <p className="text-[rgb(102,85,66)]text-[rgb(102,85,66)] text-[20px]">“my entire team can’t stop using it”</p>
             </div>
 
             <div className="flex flex-col items-center gap-2 text-center">
@@ -75,7 +76,7 @@ export default function Home() {
 
           <div className="flex flex-row items-center justify-center gap-2 text-center">
             <Image className="pt-2" src="/img/image-123.png" alt="" width={265} height={80} />
-            <Image src="/img/nvidia-inception-program-badge-rgb-for-screen.png" alt="" width={152} height={66} />
+            <Image src="/img/nv.png" alt="" width={152} height={66} />
           </div>
         </div>
       </section>
@@ -302,7 +303,7 @@ Guest Post Finder</p>
                 <div className="flex justify-center">
                   <a href="https://abun.com/integrations" className="inline-flex items-center gap-2 text-white px-6 py-1 rounded-full text-sm font-medium transition-all duration-300 hover:gap-3">
                                     
-                    <span className="text-[20px] text-[#4B539A] bg-transparent" >View Languages Supported ﹥</span>                
+                    <span className="text-[20px] text-[#4B539A]-[#4B539A] bg-transparent" >View Languages Supported ﹥</span>                
                   </a>
                 </div>
               </div>                          
@@ -360,8 +361,8 @@ Guest Post Finder</p>
       </section>    
 {/* ============================== SECTION 6 - FAQ ============================================ */}
       <FAQ /> 
-      
-
+{/* ============================================ Footer ================================================= */}
+      <Footer />
 
 
 
