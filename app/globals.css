@@ -27,6 +27,23 @@
   font-style: normal;
 }
 
+/* text carousel  - start */
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 30s linear infinite;
+}
+
+/* text carousel - End  */
+
+
 :root {
   --background: #ffffff;
   --foreground: #171717;

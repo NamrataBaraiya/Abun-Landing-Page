@@ -215,7 +215,7 @@ export default function Testimonials() {
             {/* 3️⃣ Footer */}
             <div className="py-2 flex items-center justify-between text-[14px] text-[#64698e]">
                 <div className="flex items-center justify-center gap-3">
-                <div className="flex items-center justify-center gap-1">
+                <div className="flex items-center justify-centern gap-1">
                     <Image src="/img/thumbs-up.png" alt="Like" width={16} height={16} className="opacity-70" />
                     <span>Useful</span>
                 </div>

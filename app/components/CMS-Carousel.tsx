@@ -7,19 +7,19 @@ import "swiper/css";
 
 export default function ImageCarousel() {
   const images = [
-    "/counter-carousel-images/Group-1.png",
-    "/counter-carousel-images/cropped-Gu-c-22.png",    
-    "/counter-carousel-images/Inside-logo.jpg",
-    "/counter-carousel-images/GrowMeOrganicLogo.webp",
-    "/counter-carousel-images/Jetting.svg",
-    "/counter-carousel-images/logo-3.avif",
-    "/counter-carousel-images/Titech.webp",
-    "/counter-carousel-images/Zappy-logo-2.webp",
+    "/img/CMS-carousel/google-search-console-logo-2.png",
+    "/img/CMS-carousel/Shopify.png",
+    "/img/CMS-carousel/Vector.png",
+    "/img/CMS-carousel/webflow_logo.png",
+    "/img/CMS-carousel/google-search-console-logo-2.png",
+    "/img/CMS-carousel/Shopify.png",
+    "/img/CMS-carousel/Vector.png",
+    "/img/CMS-carousel/webflow_logo.png",
   ];
 
   return (
-    <div className="flex justify-center w-full bg-white pb-16 overflow-hidden">
-      <div className="w-[1200px] max-w-full">
+    <div className="flex justify-center py-6 w-fulloverflow-hidden">
+      <div className="max-w-full">
         <Swiper
           modules={[Autoplay]}
           loop={true}
@@ -27,32 +27,24 @@ export default function ImageCarousel() {
             delay: 2000,
             disableOnInteraction: false,
           }}
-          slidesPerView={6}
+          slidesPerView={4}
           spaceBetween={20}
           grabCursor={true}
           breakpoints={{
             320: { slidesPerView: 2, spaceBetween: 10 },
             640: { slidesPerView: 3, spaceBetween: 15 },
-            1024: { slidesPerView: 6, spaceBetween: 20 },
+            1024: { slidesPerView: 4, spaceBetween: 30 },
           }}
           className="w-full"
         >
           {images.map((src, index) => (
             <SwiperSlide key={index}>
-              <div
-                className="
-                  flex 
-                  justify-center 
-                  items-center 
-                  h-[120px] 
-                  w-full
-                "
-              >
+              <div className="flex justify-center items-center h-[35] w-full">
                 <Image
                   src={src}
                   alt={`Software pack ${index + 1}`}
-                  width={150}
-                  height={100}
+                  width={90}
+                  height={35}
                   unoptimized
                   className="object-contain transition-transform duration-300 hover:scale-105"
                 />

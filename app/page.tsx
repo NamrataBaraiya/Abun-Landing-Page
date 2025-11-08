@@ -2,9 +2,11 @@
 import { useEffect, useState } from "react";
 import Image from "next/image";
 import ImageCarousel from "./components/ImageCarousel";
+import CMS_Carousel from "./components/CMS-Carousel";
 import PriceTab from "./components/PriceTab";
 import FAQ from "./components/Faq";
 import Testimonials from "./components/Testimonials"; 
+import TextSlider from "./components/TextSlider";
 
 export default function Home() {
   // Counter logic
@@ -130,7 +132,7 @@ export default function Home() {
               <p className="text-[16px] font-normal">Let AI uncover the best keywords for ranking and traffic growth.</p>
             </div>
 
-  {/*------------------------------- 8           */}
+  {/*------------------------------- 8 ------------------------------------------------------*/}
             <div className="flex p-[25px] min-h-[210px] flex-col gap-3 item-left text-left bg-white border border-[#D2D2EB] rounded-[14px] shadow-[0_3px_3px_0_rgba(19,48,66,0.07)] transition-transform duration-300 hover:scale-[1.02] hover:cursor-default">
               <Image className="p-2.5 bg-[#f1f1f9] rounded-[10px]" src="/img/Code-Analysis.png" alt="AI Blog Automation" width={40} height={40} />
               <p className="text-[20px] font-bold">ICP to Keyword Research</p>
@@ -253,7 +255,7 @@ Guest Post Finder</p>
 
       {/* ========================== SECTION 3 ========================== */}
       <section className="py-30 w-full flex flex-col justify-center items-center text-center bg-white">
-        <div className="max-w-[1200px] w-full flex flex-col justify-center items-center gap-6 px-6">
+        <div className="max-w-[1200px] w-full flex flex-col justify-center items-center gap-5 px-6">
           
           {/* Animated Counter */}
           <div className="elementor-counter mt-6">
@@ -265,8 +267,8 @@ Guest Post Finder</p>
             <p className="text-[28px] text-black font-medium mt-6">
               Our users love us 2.6 Billion.<br/><br/>That’s the amount of AI/LLM tokens used cumulatively by our users.
             </p>
-            <ImageCarousel />
-            <h2 className="py-9 text-[40px] font-bold leading-[1.1em] tracking-[-1px] text-black">All Good things Packed into One Software</h2>  
+            <ImageCarousel />            
+            <h2 className="py-5 text-[40px] font-bold leading-[1.1em] tracking-[-1px] text-black">All Good things Packed into One Software</h2>  
           
           </div>
 
@@ -281,22 +283,24 @@ Guest Post Finder</p>
              
           </div>
 
-          <div className="w-full grid grid-cols-2 gap-8 pt-4">
-              <div className="flex flex-col p-16 gap-5 text-center rounded-[20px] bg-[#e4f1ff] ">
+          <div className="w-full grid grid-cols-2 gap-7 pt-4">
+              <div className="flex flex-col pt-4 pb-2 gap-3 text-center rounded-[20px] bg-[#e4f1ff] ">
+                <CMS_Carousel />    
                 <p className="text-[35px] text-[#264363] leading-[1.1em] font-bold">Full Fledged Integrations</p>
-                <p className="text-[20px] text-[#2463A8] leading-[1.4em]" >So simple, you’ll forget it’s even integrated. Built for teams that hate complexity but love when things just work.</p>
+                <p className="text-[20px] text-[#2463A8] leading-[1.4em]" >So simple, you’ll forget it’s even integrated.<br/> Built for teams that hate complexity but <br />love when things just work.</p>
                 <div className="flex justify-center">
-                  <a href="https://abun.com/integrations" className="inline-flex items-center gap-2 px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 hover: hover:gap-3">
+                  <a href="https://abun.com/integrations" className="inline-flex items-center gap-2 px-6 py-1 rounded-full text-sm font-medium transition-all duration-300 hover: hover:gap-3">
                     <span className="text-[20px] text-[#264363] bg-transparent">View Integrations ﹥</span>                
                   </a>
                 </div>
               </div>
 
-              <div className="flex flex-col p-16 gap-5 text-center rounded-[20px] bg-[#e4e7ff] ">
-                <p className="text-[35px] text-[#2A3062] leading-[1.1em] font-bold">Multi Language Support</p>
-                <p className="text-[20px] text-[#4B539A] leading-[1.4em]" >Whether it's English, Español, or Emoji, we speak your customers’ language, so nothing gets lost in translation.</p>
+              <div className="flex flex-col p-8 gap-3 text-center rounded-[20px] bg-[#e4e7ff] ">
+                <TextSlider /> 
+                <p className="pt-5 text-[35px] text-[#2A3062] leading-[1.1em] font-bold">Multi Language Support</p>
+                <p className="text-[20px] text-[#4B539A] leading-[1.4em]" >Whether it's English, Español, or Emoji, we<br/> speak your customers’ language, so<br /> nothing gets lost in translation.</p>
                 <div className="flex justify-center">
-                  <a href="https://abun.com/integrations" className="inline-flex items-center gap-2 text-white px-6 py-3 rounded-full text-sm font-medium transition-all duration-300 hover:gap-3">
+                  <a href="https://abun.com/integrations" className="inline-flex items-center gap-2 text-white px-6 py-1 rounded-full text-sm font-medium transition-all duration-300 hover:gap-3">
                                     
                     <span className="text-[20px] text-[#4B539A] bg-transparent" >View Languages Supported ﹥</span>                
                   </a>
@@ -305,7 +309,7 @@ Guest Post Finder</p>
             
           </div>
 
-          <h2 className="pt-16 text-[35px] text-black font-medium leading-[1.1em]">We are your unfair advantage.</h2>
+          <h2 className="pt-18 text-[35px] text-black font-medium leading-[1.1em]">We are your unfair advantage.</h2>
           <p className="text-[35px] text-[#2E64FE] font-medium leading-[1.1em]" >Our users see guaranteed growth <br/>within 30 days.</p>
 
           <div className="grid grid-cols-3 gap-4 py-12 text-[25px] text-black">
