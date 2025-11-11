@@ -27,6 +27,22 @@
   font-style: normal;
 }
 
+@keyframes horizontalScroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-400px); /* Move exactly one set width */
+  }
+}
+
+.animate-horizontalScroll {
+  animation: horizontalScroll 10s linear infinite;
+  display: flex;
+  width: fit-content;
+}
+
+
 /* text carousel  - start */
 @keyframes scroll {
   0% {

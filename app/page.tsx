@@ -1,10 +1,11 @@
 "use client";
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Header from "./components/Header";
 import ImageCarousel from "./components/ImageCarousel";
 import CMS_Carousel from "./components/CMS-Carousel";
 import PriceTab from "./components/PriceTab";
-import FAQ from "./components/Faq";
+import FAQ from  "./components/Faq";
 import Testimonials from "./components/Testimonials"; 
 import TextSlider from "./components/TextSlider";
 import Footer from "./components/Footer";
@@ -32,8 +33,8 @@ export default function Home() {
   const formattedCount = count.toLocaleString("en-US");
 
   return (
-    <main className="w-full py-12 font-Geist flex min-h-screen flex-col items-center justify-center bg-white text-black dark:bg-black">
-      
+    <main className="w-full pb-12 font-Geist flex min-h-screen flex-col items-center justify-center bg-white text-black dark:bg-black">
+      <Header />
       {/* SECTION 1 */}
       <section className="py-30 w-full flex flex-col justify-center items-center text-center gap-6">
         <div className="max-w-[1200px] w-full flex flex-col justify-center items-center gap-6 px-6">
@@ -82,12 +83,12 @@ export default function Home() {
       </section>
 
       {/* SECTION 2 */}
-      <section className="py-30 w-full flex flex-col justify-center items-center text-center bg-gradient-to-b from-[#F1F1F9]/80 to-[#FFFFFF]/100">
+      <section className="pt-30 w-full flex flex-col justify-center items-center text-center bg-gradient-to-b from-[#F1F1F9]/80 to-[#FFFFFF]/100">
         <div className="max-w-[1200px] w-full flex flex-col justify-center items-center gap-6 px-6">
           <p className="text-[18px] font-medium leading-[1.1em] tracking-[-0.5px] text-[#4A4583]">AI SEO & Marketing Tools</p>
           <h2 className="text-[48px] font-bold leading-[1.1em] tracking-[-1px] text-black">Start Scaling your Traffic</h2>
 
-          <div className="w-full max-w-7xl grid grid-cols-3 gap-6 items-start justify-center text-center ">
+          <div className="w-full pt-7 max-w-7xl grid grid-cols-3 gap-5 items-start justify-center text-center ">
             {/* 1 */}
             <div className="flex p-[25px] min-h-[210px] flex-col gap-3 item-left text-left bg-[#FFFFFF] border border-[#D2D2EB] rounded-[14px] shadow-[0_3px_3px_0_rgba(19,48,66,0.07)] transition-transform duration-300 hover:scale-[1.02] hover:cursor-default">
               <Image className="p-2.5 bg-[#f1f1f9] rounded-[10px]" src="/img/Script-2-Streamline-Plump.png" alt="AI Articles" width={40} height={40} />
@@ -104,13 +105,13 @@ export default function Home() {
             </div>
 {/* 3 */}
             <div className="flex p-[25px] min-h-[210px] flex-col gap-3 item-left text-left bg-white border border-[#D2D2EB] rounded-[14px] shadow-[0_3px_3px_0_rgba(19,48,66,0.07)] transition-transform duration-300 hover:scale-[1.02] hover:cursor-default">
-              <Image className="p-2.5 bg-[#f1f1f9] rounded-[10px]" src="/img/Ai-Browser-Robot-Streamline-Plump.png" alt="AI Blog Automation" width={40} height={40} />
+              <Image className="p-2.5 bg-[#f1f1f9] rounded-[10px]" src="/img/Hierarchy-13-Streamline-Plump.png" alt="AI Blog Automation" width={40} height={40} />
               <p className="text-[20px] font-bold">AI Programmatic SEO</p>
               <p className="text-[16px] font-normal">Create Multiple Programmatic SEO based articles to rank faster.</p>
             </div>
 {/* 4 */}
             <div className="flex p-[25px] min-h-[210px] flex-col gap-3 item-left text-left bg-white border border-[#D2D2EB] rounded-[14px] shadow-[0_3px_3px_0_rgba(19,48,66,0.07)] transition-transform duration-300 hover:scale-[1.02] hover:cursor-default">
-              <Image className="p-2.5 bg-[#f1f1f9] rounded-[10px]" src="/img/Ai-Browser-Robot-Streamline-Plump.png" alt="AI Blog Automation" width={40} height={40} />
+              <Image className="p-2.5 bg-[#f1f1f9] rounded-[10px]" src="/img/Ascending-Alphabetical-Order-Streamline-Plump.png" alt="AI Blog Automation" width={40} height={40} />
               <p className="text-[20px] font-bold">AI Glossary Creator</p>
               <p className="text-[16px] font-normal">Turn a single topic into a glossary of high-ranking, Google-optimized definitions.</p>
             </div>
@@ -259,13 +260,13 @@ Guest Post Finder</p>
         <div className="max-w-[1200px] w-full flex flex-col justify-center items-center gap-5 px-6">
           
           {/* Animated Counter */}
-          <div className="elementor-counter mt-6">
+          <div className="elementor-counter mt-0">
             <div className="elementor-counter-number-wrapper flex justify-center items-center text-center">
-              <span className="font-sans text-[90px] font-bold leading-[1.1em] tracking-[-1px] text-black">
+              <span className="font-sans text-[100px] font-bold leading-[1.1em] tracking-[-1px] text-black">
                 {formattedCount}
               </span>
             </div>
-            <p className="text-[28px] text-black font-medium mt-6">
+            <p className="text-[29px] text-black font-medium mt-6">
               Our users love us 2.6 Billion.<br/><br/>That’s the amount of AI/LLM tokens used cumulatively by our users.
             </p>
             <ImageCarousel />            
@@ -290,8 +291,11 @@ Guest Post Finder</p>
                 <p className="text-[35px] text-[#264363] leading-[1.1em] font-bold">Full Fledged Integrations</p>
                 <p className="text-[20px] text-[#2463A8] leading-[1.4em]" >So simple, you’ll forget it’s even integrated.<br/> Built for teams that hate complexity but <br />love when things just work.</p>
                 <div className="flex justify-center">
+                  
                   <a href="https://abun.com/integrations" className="inline-flex items-center gap-2 px-6 py-1 rounded-full text-sm font-medium transition-all duration-300 hover: hover:gap-3">
-                    <span className="text-[20px] text-[#264363] bg-transparent">View Integrations ﹥</span>                
+                                    
+                    <span className="flex align-center items-center gap-5 justify-center text-[20px] text-[#264363] bg-transparent" >View Integrations <p className="text-[40px] mt-[-3px] font-medium">›</p> </span>                
+                  
                   </a>
                 </div>
               </div>
@@ -303,7 +307,7 @@ Guest Post Finder</p>
                 <div className="flex justify-center">
                   <a href="https://abun.com/integrations" className="inline-flex items-center gap-2 text-white px-6 py-1 rounded-full text-sm font-medium transition-all duration-300 hover:gap-3">
                                     
-                    <span className="text-[20px] text-[#4B539A]-[#4B539A] bg-transparent" >View Languages Supported ﹥</span>                
+                    <span className="flex align-center items-center gap-5 justify-center text-[20px] text-[#264363] bg-transparent" >View Languages Supported <p className="text-[40px] mt-[-3px] font-medium">›</p> </span>                
                   </a>
                 </div>
               </div>                          

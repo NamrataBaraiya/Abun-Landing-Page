@@ -1,7 +1,6 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useEffect } from "react";
 
 export default function Footer() {
   const logos = [
@@ -13,30 +12,22 @@ export default function Footer() {
     { src: "/img/CMS-carousel/webflow_logo.png", alt: "Webflow" },
     { src: "/img/CMS-carousel/google-search-console-logo-2.png", alt: "Google Search Console" },
     { src: "/img/CMS-carousel/Vector.png", alt: "Wix" },
- ];
-
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    const autoSlide = setInterval(() => {
-      setCurrentIndex((prev) =>
-        prev + 1 >= logos.length - 2 ? 0 : prev + 1
-      );
-    }, 2500);
-
-    return () => clearInterval(autoSlide);
-  }, [logos.length]);
+    { src: "/img/CMS-carousel/Shopify.png", alt: "Shopify" },
+    { src: "/img/CMS-carousel/webflow_logo.png", alt: "Webflow" },
+    { src: "/img/CMS-carousel/google-search-console-logo-2.png", alt: "Google Search Console" },
+    { src: "/img/CMS-carousel/Vector.png", alt: "Wix" },
+  ];
 
   return (
-    <footer className="w-full px-6 pt-16 flex flex-col items-center md:px-16 lg:px-28">
+    <footer className="w-full px-4 pt-16 flex flex-col items-center md:px-16 lg:px-28">
       {/* Top Section */}
-      <div className="w-[1200px] p-12 grid grid-cols-[65%_35%] gap-5 rounded-[20px] bg-[#FAF1E3]">
-        <div className="mx-auto space-y-6">
-          <h3 className="text-[40px] leading-[1.1em] font-bold">
+      <div className="w-[1150px] p-12 grid grid-cols-[65%_35%] gap-4 rounded-[20px] bg-[#FAF1E3]">
+        <div className="mx-auto space-y-6 flex flex-col gap-0">
+          <h3 className="text-[48px] leading-[1.1em] font-bold">
             The Secret Tool used by SEO & Growth Marketing Experts.
           </h3>
-          <h2 className="text-[20px] leading-[1.1em] font-medium text-[rgb(102,85,66)]">
-            Scale your Sales & Marketing with our all in one AI tools that give you <br/>an unfair advantage.
+          <h2 className="text-[22px] leading-[1.4em] font-medium text-[rgb(102,85,66)]">
+            Scale your Sales & Marketing with our all in one AI<br /> tools that give you an unfair advantage.
           </h2>
 
           {/* Works With */}
@@ -47,23 +38,17 @@ export default function Footer() {
             >
               START FREE
             </a>
-            <p className="text-[12px] font-medium text-[rgb(102,85,66)]">
+            <p className="text-[14px] font-medium text-[rgb(102,85,66)]">
               Works with:
             </p>
 
-            {/* Horizontal Carousel */}
+            {/* Continuous Horizontal Carousel */}
             <div className="relative w-[450px] overflow-hidden">
-              <div
-                className="flex transition-transform duration-700 ease-in-out"
-                style={{
-                  transform: `translateX(-${currentIndex * (100 / 3)}%)`,
-                  width: `${(logos.length / 3) * 100}%`,
-                }}
-              >
-                {logos.map((logo, i) => (
+              <div className="flex animate-scroll whitespace-nowrap">
+                {[...logos, ...logos].map((logo, i) => (
                   <div
                     key={i}
-                    className="w-1/3 flex justify-center items-center p-4 shrink-0"
+                    className="flex justify-center items-center px-6 shrink-0"
                   >
                     <Image
                       src={logo.src}
@@ -101,84 +86,104 @@ export default function Footer() {
       </div>
 
       {/* Footer Navigation */}
-      <div className="w-[1200px] items-top  text-black mt-20 grid md:grid-cols-4 gap-10 pt-12">
+      <div className="w-[1150px] items-top text-black mt-6 grid grid-cols-[25%_60%] justify-between gap-20 pt-12">
         {/* Column 1 */}
-        <div>
+        <div className="flex flex-col gap-4">
           <Link href="/">
+            
             <Image
-              src="/img/new-abun-logo.png"
+              src="/img/footer_logo.png"
               alt="Abun Logo"
-              width={140}
-              height={45}
-              className="mb-3"
+              width={165}
+              height={50}
+              className="mt-[-5px]"
             />
+            
           </Link>
-          <p className="text-sm text-[#aa97ff]">
-            The All-In-One Toolkit for SEO & Growth Marketing.
+          <p className="text-[16px] text-[#766bea] leading-[1.2ems]">
+            The All-In-One Toolkit for SEO & <br/>Growth Marketing.
           </p>
           <div className="flex gap-4 mt-4">
             <Link href="https://www.linkedin.com/company/abun/">
-              <Image src="/img/Linkedin.svg" alt="LinkedIn" width={22} height={22} />
+              <Image src="/img/Linkedin.svg" alt="LinkedIn" width={30} height={30} />
             </Link>
             <Link href="https://twitter.com/AbunTeam">
-              <Image src="/img/Twitter.svg" alt="Twitter" width={22} height={22} />
+              <Image src="/img/Twitter.svg" alt="Twitter" width={30} height={30} />
             </Link>
             <Link href="https://www.youtube.com/@abuncom">
-              <Image src="/img/Youtube.svg" alt="YouTube" width={22} height={22} />
+              <Image src="/img/Youtube.svg" alt="YouTube" width={30} height={30} />
             </Link>
           </div>
         </div>
 
+        <div className="w-full flex flex-row justify-between">    
         {/* Column 2 */}
-        <ul className="space-y-2 text-black">
-          <li><a href="#faq" className="">FAQ</a></li>
-          <li><a href="#price" className="">Pricing</a></li>
-          <li><a href="/help" className="">Knowledgebase</a></li>
-          <li><a href="https://app.abun.com/auth/login" className="">Login</a></li>
-          <li><a href="https://app.abun.com/auth/signup" className="">Signup</a></li>
+        <ul className="space-y-2 text-black flex flex-col gap-2">
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#price">Pricing</a></li>
+          <li><a href="/help">Knowledgebase</a></li>
+          <li><a href="https://app.abun.com/auth/login">Login</a></li>
+          <li><a href="https://app.abun.com/auth/signup">Signup</a></li>
         </ul>
 
         {/* Column 3 */}
-        <ul className="space-y-2 text-black">
-          <li><a href="/category/free-high-quality-backlinks" className="">Free Backlink Guide</a></li>
-          <li><a href="/blog" className="">Blog</a></li>
-          <li><a href="mailto:amin@abun.com" className="">Email Founders</a></li>
-          <li><a href="/affiliate" className="">Affiliate Program</a></li>
-          <li><a href="/free-ai-tools" className="">Free Mini AI Tools</a></li>
+        <ul className="space-y-2 text-black flex flex-col gap-2">
+          <li><a href="/category/free-high-quality-backlinks">Free Backlink Guide</a></li>
+          <li><a href="/blog">Blog</a></li>
+          <li><a href="mailto:amin@abun.com">Email Founders</a></li>
+          <li><a href="/affiliate">Affiliate Program</a></li>
+          <li><a href="/free-ai-tools">Free Mini AI Tools</a></li>
         </ul>
 
         {/* Column 4 */}
-        <ul className="space-y-2 text-black">
-          <li className="font-semibold">Other Products</li>
-          <li><a href="https://deliveryman.ai/?ref=abun" className="">Deliveryman.ai</a></li>
-          <li><a href="https://draftss.com?ref=abun" className="">Draftss.com</a></li>
-          <li><a href="https://clientportalos.com?ref=abun" className="">ClientPortalOS.com</a></li>
+        <ul className="space-y-2 text-black flex flex-col gap-2">
+          <li className="">Other Products</li>
+          <li><a href="https://deliveryman.ai/?ref=abun">Deliveryman.ai</a></li>
+          <li><a href="https://draftss.com?ref=abun">Draftss.com</a></li>
+          <li><a href="https://clientportalos.com?ref=abun">ClientPortalOS.com</a></li>
         </ul>
+        </div>
       </div>
 
       {/* Bottom Section */}
-      <div className="w-[1200px] pt-6 flex flex-col md:flex-row justify-between items-center gap-8 text-[12px] text-black">
-        <div className="flex flex-wrap justify-center gap-6">
+      <div className="w-[1150px] pt-10 flex flex-col md:flex-row justify-between items-center gap-8 text-[11px] text-black">
+        <div className="flex flex-wrap justify-center gap-8">
           <a href="/terms-conditions">Terms & Conditions</a>
           <a href="/privacy-policy">Privacy Policy</a>
         </div>
-        <div className="flex flex-col md:flex-row items-center gap-3">
-          <Image src="/img/image-123.png" alt="Microsoft" width={200} height={100} />
-          <Image src="/img/nv.png" alt="NVIDIA" width={130} height={50} />
+        <div className="flex flex-col md:flex-row items-center gap-0">
+          <Image className="mt-2" src="/img/image-123.png" alt="Microsoft" width={250} height={100} />
+          <Image src="/img/nv.png" alt="NVIDIA" width={150} height={60} />
         </div>
         <p className="text-black text-[18px] text-center md:text-right">
           Made with ❤️ by{" "}
-          <a href="https://draftss.com/?ref=abun" className="underline hover:text-white">
+          <a href="https://draftss.com/?ref=abun" className="underline decoration-black text-[#766bea]">
             Draftss.com
           </a>
         </p>
       </div>
 
       <div>
-        <p className="text-black text-[12px]">
+        <p className="h-5 text-black flex pt-6 text-[11px]">
           Copyright © 2025 Abun. All Rights Reserved.
         </p>
       </div>
+
+      {/* Keyframes for Smooth Continuous Scroll */}
+      <style jsx>{`
+        @keyframes scroll {
+          0% {
+            transform: translateX(0);
+          }
+          100% {
+            transform: translateX(-50%);
+          }
+        }
+        .animate-scroll {
+          display: flex;
+          animation: scroll 5s linear infinite;
+        }
+      `}</style>
     </footer>
   );
 }
