@@ -36,6 +36,23 @@
   }
 }
 
+
+/* CTA - start */
+@keyframes pulse-shadow {
+  0% {
+    box-shadow: 0 0 0 0 #bcc3cb;
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(250, 206, 73, 0);
+  }
+}
+
+.animate-pulse-shadow {
+  animation: pulse-shadow 2.5s ease-in-out infinite;
+}
+
+/* CTA -  End */
+
 .animate-horizontalScroll {
   animation: horizontalScroll 10s linear infinite;
   display: flex;

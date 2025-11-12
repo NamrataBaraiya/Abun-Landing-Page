@@ -39,38 +39,38 @@ export default function Home() {
       <section className="py-30 w-full flex flex-col justify-center items-center text-center gap-6">
         <div className="max-w-[1200px] w-full flex flex-col justify-center items-center gap-6 px-6">
           
-          <div className="w-[950px] max-w-[1200px] flex flex-row flex-wrap items-center justify-between text-center">
+          <div className="max-w-[1100px] flex flex-row flex-wrap items-center justify-between text-center xl:gap-24 lg:gap-8">
             
             <div className="flex flex-col items-center gap-2 text-center">
               <Image src="/img/rating-star.png" alt="Rating Star" width={115} height={20} />
-              <p className="text-[rgb(102,85,66)] text-[20px]">“biggest value bomb”</p>
+              <p className="text-[rgb(102,85,66)] text-[20px] xl:text-[20px] md:text-[16px] sm:text-[12px]">“biggest value bomb”</p>
             </div>
 
             <div className="flex flex-col items-center gap-2 text-center">
               <Image src="/img/rating-star.png" alt="Rating Star" width={115} height={20} />
-              <p className="text-[rgb(102,85,66)]text-[rgb(102,85,66)] text-[20px]">“my entire team can’t stop using it”</p>
+              <p className="text-[rgb(102,85,66)] text-[20px] xl:text-[20px] md:text-[16px] sm:text-[12px]">“my entire team can’t stop using it”</p>
             </div>
 
             <div className="flex flex-col items-center gap-2 text-center">
               <Image src="/img/rating-star.png" alt="Rating Star" width={115} height={20} />
-              <p className="text-[#665542] text-[20px]">“helped us scale & grow”</p>
+              <p className="text-[#665542] text-[20px] xl:text-[20px] md:text-[16px] sm:text-[12px]">“helped us scale & grow”</p>
             </div>
           </div>
 
-          <h1 className="font-sans text-[90px] font-bold leading-[1.1em] tracking-[-1px] text-black">
+          <h1 className="font-sans text-[90px] font-bold leading-[1.1em] tracking-[-1px] text-black xl:text-[90px] md:text-[60px] sm:text-[40px]">
             The All-In-One Toolkit for <br /> SEO & Growth Marketing.
           </h1>
 
-          <p className="text-[32px] text-black font-medium">
+          <p className="text-[32px] text-black font-medium sm:text-[20px]">
             Used by 5,325 Marketers, Founders, SEO Experts
             <br />
             to Drive Traffic, Generate Leads, Rank Faster & Achieve Solid Business Growth
           </p>
 
-          <button className="mt-5 text-black text-[20px] transition-transform duration-300 ease-out hover:-translate-y-2 bg-[#FACE49] rounded-[11px] px-[30px] py-[20px]">
+          <button className="mt-5 text-black text-[20px] transition-transform duration-300 ease-out hover:-translate-y-2 bg-[#FACE49] rounded-[11px] px-[30px] py-4 animate-pulse-shadow ">
             <a>Claim Your Free Account ➔</a>
           </button>
-
+          
           <p className="font-sans text-[18px] font-normal leading-[1.1em] tracking-[0px] text-[#00000099]">
             Free Accounts available only for a Limited Time
           </p>
@@ -262,7 +262,7 @@ Guest Post Finder</p>
           {/* Animated Counter */}
           <div className="elementor-counter mt-0">
             <div className="elementor-counter-number-wrapper flex justify-center items-center text-center">
-              <span className="font-sans text-[100px] font-bold leading-[1.1em] tracking-[-1px] text-black">
+              <span className="font-sans text-[100px] lx:text-[100px] md:text-[70px] sm:text-[50px] font-bold leading-[1.1em] tracking-[-1px] text-black">
                 {formattedCount}
               </span>
             </div>
@@ -274,15 +274,15 @@ Guest Post Finder</p>
           
           </div>
 
-          <div className="w-full p-16 grid space-between grid-cols-2 gap-20 rounded-[20px] bg-[#FAF1E3] ">
+          <div className="w-full p-16 grid space-between grid-cols-2 xl:grid-cols-2 md:grid-row gap-20 rounded-[20px] bg-[#FAF1E3] ">
               <div className="flex flex-col gap-5 text-left">
                 <h3 className="text-[35px] text-[#4F340A] leading-[1.1em] font-bold">We integrate with all the  latest tech, so you are not left behind.</h3>
                 <p className="text-[20px] text-[#8A5E19] leading-[1.4em]" >Our system is built to support top platforms<br/> today, and ready for what’s next tomorrow.</p>
               </div>
               <div className="flex justify-end">
                 <Image src="/img/Software-pack.png" alt="Software Pack" width={440} height={300} className="rounded-lg text-right" />
-              </div>                          
-             
+              </div>                      
+            
           </div>
 
           <div className="w-full grid grid-cols-2 gap-7 pt-4">
@@ -343,9 +343,10 @@ Guest Post Finder</p>
             </div>
           </div>
 
-          <button className="mt-8 text-black text-[20px] transition-transform duration-300 ease-out hover:-translate-y-2 bg-[#FACE49] rounded-[11px] px-[30px] py-[20px]">
+          <button className="mt-8 text-black text-[20px] transition-transform duration-300 ease-out hover:-translate-y-2 bg-[#FACE49] rounded-[11px] px-[30px] py-4 animate-pulse-shadow ">
             <a>Claim Your Free Account ➔</a>
           </button>
+
           <p className="font-sans text-[18px] font-normal leading-[1.1em] tracking-[0px] text-[#00000099]">
             Free Accounts available only for a Limited Time
           </p>

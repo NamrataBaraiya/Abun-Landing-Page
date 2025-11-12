@@ -19,7 +19,7 @@ export default function ImageCarousel() {
 
   return (
     <div className="flex justify-center w-full bg-white pb-16 overflow-hidden">
-      <div className="w-[1200px] max-w-full">
+      <div className="max-w-[1200px] xl:w-[1200px] md:max-w-[600] sm:w-[400px]">
         <Swiper
           modules={[Autoplay]}
           loop={true}
