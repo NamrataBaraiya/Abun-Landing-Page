@@ -19,10 +19,10 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="w-full px-4 pt-16 flex flex-col items-center md:px-16 lg:px-28">
+    <footer className="max-w-full px-4 pt-16 flex flex-col items-center md:px-16 lg:px-28">
       {/* Top Section */}
-      <div className="w-[1150px] p-12 grid grid-cols-[65%_35%] gap-4 rounded-[20px] bg-[#FAF1E3]">
-        <div className="mx-auto space-y-6 flex flex-col gap-0">
+      <div className="max-w-[1150px] p-12 grid grid-cols-[65%_35%] gap-4 rounded-[20px] bg-[#FAF1E3]">
+        <div className="mx-auto space-y-6 flex flex-col gap-0 md:flex-row md:items-center">
           <h3 className="text-[48px] leading-[1.1em] font-bold">
             The Secret Tool used by SEO & Growth Marketing Experts.
           </h3>
@@ -65,7 +65,7 @@ export default function Footer() {
         </div>
 
         {/* Reviews */}
-        <div className="flex flex-col justify-center gap-8 text-center">
+        <div className="flex flex-col justify-center gap-8 text-center md:flex-row">
           {[
             "“biggest value bomb”",
             "“my entire team can’t stop using it”",
@@ -86,7 +86,7 @@ export default function Footer() {
       </div>
 
       {/* Footer Navigation */}
-      <div className="w-[1150px] items-top text-black mt-6 grid grid-cols-[25%_60%] justify-between gap-20 pt-12">
+      <div className="max-w-[1150px] items-top text-black mt-6 grid grid-cols-[25%_60%] justify-between gap-20 pt-12">
         {/* Column 1 */}
         <div className="flex flex-col gap-4">
           <Link href="/">

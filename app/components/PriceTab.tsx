@@ -44,9 +44,9 @@ export default function Tabs() {
                 <p className="text-[20px] text-[#2E64FE] font-medium leading-[1.1em]" >Limited Time Offer: 50% OFF for First Month. No Coupon Code Required.</p>
 
             </div>            
-            <div className="w-[1350px] grid grid-cols-4 py-10 text-[16px] text-[#000c60] text-left">
+            <div className="max-w-[1350px] grid grid-cols-4 py-10 text-[16px] text-[#000c60] text-left md:gap-4">
 {/* ------------------------------------------------Seed---------------------------------------- */}
-                          <div className="flex flex-col pl-5 pr-4 pt-3 pb-6 gap-0 border-2 border-r-0 mr-[-7px] border-black rounded-tl-[10px] rounded-bl-[10px] rounded-tr-[0px] rounded-br-[0px]">
+                          <div className="flex flex-col pl-5 pr-4 pt-3 pb-6 gap-0 border-2 border-r-0 mr-[-7px] border-black rounded-tl-[10px] rounded-bl-[10px] rounded-tr-[0px] rounded-br-[0px] md:border md:rounded-[10px]">
                               <h4 className="text-[40px] text-black text-bold">Seed</h4>
                               <span className="flex content-center items-center text-[30px] text-[#8E8E90] gap-2 "><span className="line-through ">$24</span><p className="text-[16px] flex align-center content-center">per month</p></span>
                               <span className="flex content-end items-baseline text-[60px] text-black gap-2"><b>$12</b><p className="text-[16px] text-black font-regular decoration-none flex content-end items-baseline">first month</p></span>
@@ -93,8 +93,8 @@ export default function Tabs() {
                           </div>
 
                           {/* --------------------------------Starter---------------------------------------- */}
-                          <div className="flex flex-col pl-5 pr-4 pt-3 pb-6 gap-0 border-2 border-r-0 mr-[-7px] border-black rounded-tl-[10px] rounded-bl-[10px] rounded-tr-[0px] rounded-br-[0px]">
-                              <h4 className="text-[40px] text-black text-bold">Starter</h4>
+                          <div className="flex flex-col pl-5 pr-4 pt-3 pb-6 gap-0 border-2 border-r-0 mr-[-7px] border-black rounded-tl-[10px] rounded-bl-[10px] rounded-tr-[0px] rounded-br-[0px] md:border-black md:rounded-[10px]">
+                            <h4 className="text-[40px] text-black text-bold">Starter</h4>
                               <span className="flex content-center items-center text-[30px] text-[#8E8E90] gap-2 "><span className="line-through ">$59</span><p className="text-[16px] flex align-center content-center">per month</p></span>
                               <span className="flex content-end items-baseline text-[60px] text-black gap-2"><b>$29</b><p className="text-[16px] text-black font-regular decoration-none flex content-end items-baseline">first month</p></span>
 
@@ -140,8 +140,8 @@ export default function Tabs() {
                           </div>
 
                           {/* --------------------------------Growth---------------------------------------- */}
-                          <div className="flex flex-col pl-5 pr-4 pt-3 pb-6 gap-0 border-2 border-r-0 mr-[-7px] border-black rounded-tl-[10px] rounded-bl-[10px] rounded-tr-[0px] rounded-br-[0px]">
-                              <h4 className="text-[40px] text-black text-bold">Growth</h4>
+                          <div className="flex flex-col pl-5 pr-4 pt-3 pb-6 gap-0 border-2 border-r-0 mr-[-7px] border-black rounded-tl-[10px] rounded-bl-[10px] rounded-tr-[0px] rounded-br-[0px] md:border md:rounded-[10px]">
+                             <h4 className="text-[40px] text-black text-bold">Growth</h4>
                               <span className="flex content-center items-center text-[30px] text-[#8E8E90] gap-2 "><span className="line-through ">$79</span><p className="text-[16px] flex align-center content-center">per month</p></span>
                               <span className="flex content-end items-baseline text-[60px] text-black gap-2"><b>$39</b><p className="text-[16px] text-black font-regular decoration-none flex content-end items-baseline">first month</p></span>
 
@@ -182,12 +182,12 @@ export default function Tabs() {
 
                               </ul>
                               <div className="w-full min-w-full justify-center flex items-center content-center">
-                                  <button className="w-fit mt-5 text-center text-[18px] py-[10px] px-[60px] border-black border-solid border-[1px] text-black rounded-[100px] hover:bg-[#2E64FE] hover:text-white hover:border-[#2E64FE] hover:-translate-y-2 focus:bg-[#2E64FE] focus:text-white focus:border-[#2E64FE] focus:-translate-y-2 transition-transform duration-300"><a>PROCEED</a></button>
+                                  <button className="w-fit mt-5 text-center text-[18px] py-2.5 px-[60px] border-black border-solid border text-black rounded-[100px] hover:bg-[#2E64FE] hover:text-white hover:border-[#2E64FE] hover:-translate-y-2 focus:bg-[#2E64FE] focus:text-white focus:border-[#2E64FE] focus:-translate-y-2 transition-transform duration-300"><a>PROCEED</a></button>
                               </div>
                           </div>
 
                           {/* --------------------------------Growth Max---------------------------------------- */}
-                          <div className="flex flex-col pl-5 pr-3 pt-3 pb-6 gap-0 bg-[#ffffe6] border-4 border-[#2e64fe] rounded-[10px]">
+                          <div className="flex flex-col pl-5 pr-3 pt-3 pb-6 gap-0 bg-[#ffffe6] border-4 border-[#2e64fe] rounded-[10px] md:border md:rounded-[10px] ">
                               <h4 className="text-[40px] text-black text-bold">Growth Max</h4>
                               <span className="flex content-center items-center text-[30px] text-[#8E8E90] gap-2 "><span className="line-through ">$149</span><p className="text-[16px] flex align-center content-center">per month</p></span>
                               <span className="flex content-end items-baseline text-[60px] text-black gap-2"><b>$74</b><p className="text-[16px] text-black font-regular decoration-none flex content-end items-baseline">first month</p></span>
@@ -244,9 +244,9 @@ export default function Tabs() {
             <div>
                 <p className="text-[20px] text-[#2E64FE] font-medium leading-[1.1em]" >Pay for 6 Months, Get 6 Months for Free. No Coupon Code Required.</p>
             </div>
-            <div className="w-[1350px] grid grid-cols-4 py-10 text-[16px] text-[#000c60] text-left">
+            <div className="max-w-[1350px] grid grid-cols-4 py-10 text-[16px] text-[#000c60] text-left md:gap-4">
 {/* ------------------------------------------------Seed---------------------------------------- */}
-                          <div className="flex flex-col pl-5 pr-4 pt-3 pb-6 gap-0 border-2 border-r-0 mr-[-7px] border-black rounded-tl-[10px] rounded-bl-[10px] rounded-tr-[0px] rounded-br-[0px]">
+                          <div className="flex flex-col pl-5 pr-4 pt-3 pb-6 gap-0 border-2 border-r-0 mr-[-7px] border-black rounded-tl-[10px] rounded-bl-[10px] rounded-tr-none rounded-br-none md:border md:rounded-[10px]">
                               <h4 className="text-[40px] text-black text-bold">Seed</h4>
                               <span className="flex content-end items-baseline text-[60px] text-black gap-2"><b>$12</b><p className="text-[16px] text-black font-regular decoration-none flex content-end items-baseline">per month</p></span>
                               <span className="leading-[1em] pb-8"> Billed Yearly</span>          
@@ -287,12 +287,12 @@ export default function Tabs() {
 
                               </ul>
                               <div className="w-full min-w-full justify-center flex items-center content-center">
-                                  <button className="w-fit mt-5 text-center text-[18px] py-[10px] px-[60px] border-black border-solid border-[1px] text-black rounded-[100px] hover:bg-[#2E64FE] hover:text-white hover:border-[#2E64FE] hover:-translate-y-2 focus:bg-[#2E64FE] focus:text-white focus:border-[#2E64FE] focus:-translate-y-2 transition-transform duration-300"><a>PROCEED</a></button>
+                                  <button className="w-fit mt-5 text-center text-[18px] py-[10px] px-[60px] border-black border-solid border text-black rounded-[100px] hover:bg-[#2E64FE] hover:text-white hover:border-[#2E64FE] hover:-translate-y-2 focus:bg-[#2E64FE] focus:text-white focus:border-[#2E64FE] focus:-translate-y-2 transition-transform duration-300"><a>PROCEED</a></button>
                               </div>
                           </div>
 
                           {/* --------------------------------Starter---------------------------------------- */}
-                          <div className="flex flex-col pl-5 pr-4 pt-3 pb-6 gap-0 border-2 border-r-0 mr-[-7px] border-black rounded-tl-[10px] rounded-bl-[10px] rounded-tr-[0px] rounded-br-[0px]">
+                          <div className="flex flex-col pl-5 pr-4 pt-3 pb-6 gap-0 border-2 border-r-0 mr-[-7px] border-black rounded-tl-[10px] rounded-bl-[10px] rounded-tr-none rounded-br-none md:border md:rounded-[10px]">
                               <h4 className="text-[40px] text-black text-bold">Starter</h4>
                               <span className="flex content-end items-baseline text-[60px] text-black gap-2"><b>$29</b><p className="text-[16px] text-black font-regular decoration-none flex content-end items-baseline">per month</p></span>
                               <span className="leading-[1em] pb-8"> Billed Yearly</span>  
@@ -333,12 +333,12 @@ export default function Tabs() {
 
                               </ul>
                               <div className="w-full min-w-full justify-center flex items-center content-center">
-                                  <button className="w-fit mt-5 text-center text-[18px] py-[10px] px-[60px] border-black border-solid border-[1px] text-black rounded-[100px] hover:bg-[#2E64FE] hover:text-white hover:border-[#2E64FE] hover:-translate-y-2 focus:bg-[#2E64FE] focus:text-white focus:border-[#2E64FE] focus:-translate-y-2 transition-transform duration-300"><a>PROCEED</a></button>
+                                  <button className="w-fit mt-5 text-center text-[18px] py-[10px] px-[60px] border-black border-solid border text-black rounded-[100px] hover:bg-[#2E64FE] hover:text-white hover:border-[#2E64FE] hover:-translate-y-2 focus:bg-[#2E64FE] focus:text-white focus:border-[#2E64FE] focus:-translate-y-2 transition-transform duration-300"><a>PROCEED</a></button>
                               </div>
                           </div>
 
                           {/* --------------------------------Growth---------------------------------------- */}
-                          <div className="flex flex-col pl-5 pr-4 pt-3 pb-6 gap-0 border-2 border-r-0 mr-[-7px] border-black rounded-tl-[10px] rounded-bl-[10px] rounded-tr-[0px] rounded-br-[0px]">
+                          <div className="flex flex-col pl-5 pr-4 pt-3 pb-6 gap-0 border-2 border-r-0 mr-[-7px] border-black rounded-tl-[10px] rounded-bl-[10px] rounded-tr-none rounded-br-none md:border md:rounded-[10px]">
                               <h4 className="text-[40px] text-black text-bold">Growth</h4>
                               <span className="flex content-end items-baseline text-[60px] text-black gap-2"><b>$39</b><p className="text-[16px] text-black font-regular decoration-none flex content-end items-baseline">per month</p></span>
                               <span className="leading-[1em] pb-8"> Billed Yearly</span>
@@ -364,12 +364,12 @@ export default function Tabs() {
                                   <li><b>5000 URLs</b> AI Auto Schema</li>
                                   <li><b>200</b> AI Glossary Creator</li>
 
-                                  <li className="flex items-center content-center gap-3"><span className="flex items-center justify-center text-[14px] bg-[#7A63DF33] text-[#7A63DF] max-h-[28px] w-[28px] p-2 rounded-[100px]">✓</span>AI Programmatic SEO</li>
-                                  <li className="flex items-center content-center gap-3"><span className="flex items-center justify-center text-[14px] bg-[#7A63DF33] text-[#7A63DF] max-h-[28px] w-[28px] p-2 rounded-[100px]">✓</span>LongTail Keyword Research</li>
-                                  <li className="flex items-center content-center gap-3"><span className="flex items-center justify-center text-[14px] bg-[#7A63DF33] text-[#7A63DF] max-h-[28px] w-[28px] p-2 rounded-[100px]">✓</span>Steal Competitor Keywords</li>
-                                  <li className="flex items-center content-center gap-3"><span className="flex items-center justify-center text-[14px] bg-[#7A63DF33] text-[#7A63DF] max-h-[28px] w-[28px] p-2 rounded-[100px]">✓</span>AI Keyword Research</li>
-                                  <li className="flex items-center content-center gap-3"><span className="flex items-center justify-center text-[14px] bg-[#7A63DF33] text-[#7A63DF] max-h-[28px] w-[28px] p-2 rounded-[100px]">✓</span>ICP to KW Research</li>
-                                  <li className="flex items-center content-center gap-3"><span className="flex items-center justify-center text-[14px] bg-[#7A63DF33] text-[#7A63DF] max-h-[28px] w-[28px] p-2 rounded-[100px]">✓</span>Manual Keyword Research</li>
+                                  <li className="flex items-center content-center gap-3"><span className="flex items-center justify-center text-[14px] bg-[#7A63DF33] text-[#7A63DF] max-h-7 w-7 p-2 rounded-[100px]">✓</span>AI Programmatic SEO</li>
+                                  <li className="flex items-center content-center gap-3"><span className="flex items-center justify-center text-[14px] bg-[#7A63DF33] text-[#7A63DF] max-h-7 w-7 p-2 rounded-[100px]">✓</span>LongTail Keyword Research</li>
+                                  <li className="flex items-center content-center gap-3"><span className="flex items-center justify-center text-[14px] bg-[#7A63DF33] text-[#7A63DF] max-h-7 w-7 p-2 rounded-[100px]">✓</span>Steal Competitor Keywords</li>
+                                  <li className="flex items-center content-center gap-3"><span className="flex items-center justify-center text-[14px] bg-[#7A63DF33] text-[#7A63DF] max-h-7 w-7 p-2 rounded-[100px]">✓</span>AI Keyword Research</li>
+                                  <li className="flex items-center content-center gap-3"><span className="flex items-center justify-center text-[14px] bg-[#7A63DF33] text-[#7A63DF] max-h-7 w-7 p-2 rounded-[100px]">✓</span>ICP to KW Research</li>
+                                  <li className="flex items-center content-center gap-3"><span className="flex items-center justify-center text-[14px] bg-[#7A63DF33] text-[#7A63DF] max-h-7 w-7 p-2 rounded-[100px]">✓</span>Manual Keyword Research</li>
                                   <li className="flex justify-between items-center content-center"><div className="flex gap-3"><span className="flex items-center justify-center text-[14px] bg-[#7A63DF33] text-[#7A63DF] max-h-[28px] w-[28px] p-2 rounded-[100px]">✓</span>Video to Article</div><span className="text-[13px] py-1 px-2 bg-[#b9b9b933] text-[#686868] rounded-[100px] min-w-[95px]">Coming Soon</span></li>
                                   <li className="flex justify-between items-center content-center gap-3"><div className="flex gap-3"><span className="flex items-center justify-center text-[14px] bg-[#7A63DF33] text-[#7A63DF] max-h-[28px] w-[28px] p-2 rounded-[100px]">✓</span>AI Article Updater</div><span className="text-[13px] py-1 px-2 bg-[#b9b9b933] text-[#686868] rounded-[100px] min-w-[95px]">Coming Soon</span></li>
                                   <li className="flex justify-between items-center content-center gap-3"><div className="flex gap-3"><span className="flex items-center justify-center text-[14px] bg-[#7A63DF33] text-[#7A63DF] max-h-[28px] w-[28px] p-2 rounded-[100px]">✓</span>AI Auto Technical SEO</div><span className="text-[13px] py-1 px-2 bg-[#b9b9b933] text-[#686868] rounded-[100px] min-w-[95px]">Coming Soon</span></li>
@@ -379,7 +379,7 @@ export default function Tabs() {
 
                               </ul>
                               <div className="w-full min-w-full justify-center flex items-center content-center">
-                                  <button className="w-fit mt-5 text-center text-[18px] py-[10px] px-[60px] border-black border-solid border-[1px] text-black rounded-[100px] hover:bg-[#2E64FE] hover:text-white hover:border-[#2E64FE] hover:-translate-y-2 focus:bg-[#2E64FE] focus:text-white focus:border-[#2E64FE] focus:-translate-y-2 transition-transform duration-300"><a>PROCEED</a></button>
+                                  <button className="w-fit mt-5 text-center text-[18px] py-[10px] px-[60px] border-black border-solid border text-black rounded-[100px] hover:bg-[#2E64FE] hover:text-white hover:border-[#2E64FE] hover:-translate-y-2 focus:bg-[#2E64FE] focus:text-white focus:border-[#2E64FE] focus:-translate-y-2 transition-transform duration-300"><a>PROCEED</a></button>
                               </div>
                           </div>
 
