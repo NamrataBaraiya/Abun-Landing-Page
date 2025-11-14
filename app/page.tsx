@@ -67,11 +67,11 @@ export default function Home() {
             to Drive Traffic, Generate Leads, Rank Faster & Achieve Solid Business Growth
           </p>
 
-          <button className="mt-5 text-black text-[20px] transition-transform duration-300 ease-out hover:-translate-y-2 bg-[#FACE49] rounded-[11px] px-[30px] py-4 animate-pulse-shadow ">
+          <button className="mt-5 text-black text-[16px] xl:text-[20px] md:text-[20px] transition-transform duration-300 ease-out hover:-translate-y-2 bg-[#FACE49] rounded-[11px] px-[30px] py-4 animate-pulse-shadow ">
             <a>Claim Your Free Account ➔</a>
           </button>
           
-          <p className="font-sans text-[18px] font-normal leading-[1.1em] tracking-[0px] text-[#00000099]">
+          <p className="font-sans text-[14px] xl:text-[18px] md:text-[18px] font-normal leading-[1.1em] tracking-[0px] text-[#00000099]">
             Free Accounts available only for a Limited Time
           </p>
 
@@ -274,7 +274,7 @@ Guest Post Finder</p>
           
           </div>
 
-          <div className="w-full p-16 grid space-between grid-cols-1 gap-5 xl:grid-cols-[50%_40%] xl:p-16 md:p-16 md:grid-cols-1 sm:p-5 sm:grid-cols-1 rounded-[20px] bg-[#FAF1E3] ">
+          <div className="w-full p-8 xl:p-16 md:p-16 grid space-between grid-cols-1 gap-5 xl:grid-cols-[50%_40%] xl:p-16 md:p-16 md:grid-cols-1 sm:p-5 sm:grid-cols-1 rounded-[20px] bg-[#FAF1E3] ">
               <div className="flex flex-col gap-5 text-center xl:text-left md:text-center sm:text-center">
                 <h3 className="text-[40px] text-[#4F340A] leading-[1.1em] font-semibold">We integrate with all the  latest tech, so you are not left behind.</h3>
                 <p className="text-[20px] text-[#8A5E19] leading-[1.4em]" >Our system is built to support top platforms<br/> today, and ready for what’s next tomorrow.</p>
@@ -289,12 +289,12 @@ Guest Post Finder</p>
               <div className="flex flex-col pt-4 pb-2 gap-3 text-center rounded-[20px] bg-[#e4f1ff] ">
                 <CMS_Carousel />    
                 <p className="text-[35px] text-[#264363] leading-[1.1em] font-bold">Full Fledged Integrations</p>
-                <p className="text-[20px] text-[#2463A8] leading-[1.4em]" >So simple, you’ll forget it’s even integrated.<br/> Built for teams that hate complexity but <br />love when things just work.</p>
+                <p className="text-[16px] xl:text-[20px] md:text-[20px] text-[#2463A8] leading-[1.4em]" >So simple, you’ll forget it’s even integrated.<br/> Built for teams that hate complexity but <br />love when things just work.</p>
                 <div className="flex justify-center">
                   
                   <a href="https://abun.com/integrations" className="inline-flex items-center gap-2 px-6 py-1 rounded-full text-sm font-medium transition-all duration-300 hover: hover:gap-3">
                                     
-                    <span className="flex align-center items-center gap-5 justify-center text-[20px] text-[#264363] bg-transparent" >View Integrations <p className="text-[40px] mt-[-3px] font-medium">›</p> </span>                
+                    <span className="flex align-center items-center gap-5 justify-center text-[16px] xl:text-[20px] md:text-[20px] text-[#264363] bg-transparent" >View Integrations <p className="text-[40px] mt-[-3px] font-medium">›</p> </span>                
                   
                   </a>
                 </div>
@@ -303,22 +303,22 @@ Guest Post Finder</p>
               <div className="flex flex-col p-8 gap-3 text-center rounded-[20px] bg-[#e4e7ff] ">
                 <TextSlider /> 
                 <p className="pt-5 text-[35px] text-[#2A3062] leading-[1.1em] font-bold">Multi Language Support</p>
-                <p className="text-[20px] text-[#4B539A] leading-[1.4em]" >Whether it's English, Español, or Emoji, we<br/> speak your customers’ language, so<br /> nothing gets lost in translation.</p>
+                <p className="text-[16px] xl:text-[20px] md:text-[20px] text-[#4B539A] leading-[1.4em]" >Whether it's English, Español, or Emoji, we<br/> speak your customers’ language, so<br /> nothing gets lost in translation.</p>
                 <div className="flex justify-center">
                   <a href="https://abun.com/integrations" className="inline-flex items-center gap-2 text-white px-6 py-1 rounded-full text-sm font-medium transition-all duration-300 hover:gap-3">
                                     
-                    <span className="flex align-center items-center gap-5 justify-center text-[20px] text-[#264363] bg-transparent" >View Languages Supported <p className="text-[40px] mt-[-3px] font-medium">›</p> </span>                
+                    <span className="flex align-center items-center gap-5 justify-center text-[16px] xl:text-[20px] md:text-[20px] text-[#264363] bg-transparent" >View Languages Supported <p className="text-[40px] mt-[-3px] font-medium">›</p> </span>                
                   </a>
                 </div>
               </div>                          
             
           </div>
 
-          <h2 className="pt-18 text-[35px] text-black font-medium leading-[1.1em]">We are your unfair advantage.</h2>
+          <h2 className="pt-8 xl:pt-18 md:pt-12 sm:pt-8 text-[35px] text-black font-medium leading-[1.1em]">We are your unfair advantage.</h2>
           <p className="text-[35px] text-[#2E64FE] font-medium leading-[1.1em]" >Our users see guaranteed growth <br/>within 30 days.</p>
 
-          <div className="grid grid-cols-1 xl:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 gap-4 py-12 text-[16px] text-black xl:text-[25px] md:text-[16px] sm:text-[16px]">
-            <div className="flex flex-col gap-4">
+          <div className="grid grid-cols-1 xl:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 gap-2 py-12 text-[16px] text-black xl:text-[25px] md:text-[16px] sm:text-[16px]">
+            <div className="flex flex-col gap-2 xl:gap-4 md:gap-4 ">
               <p>25+ Tools</p>
               <p>Feature Rich Tools</p>
               <p>Growing Integrations</p>
@@ -326,7 +326,7 @@ Guest Post Finder</p>
               <p>Frequent Feature Drops</p>          
             </div>
 
-            <div className="flex flex-col gap-4">  
+            <div className="flex flex-col gap-2 xl:gap-4 md:gap-4">  
               <p>No Learning Curve</p>
               <p>Community Driven</p>
               <p>All in one Pricing</p>
@@ -334,7 +334,7 @@ Guest Post Finder</p>
               <p>Privacy First</p>
             </div>
 
-            <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-2 xl:gap-4 md:gap-4">
               <p>Built for Scale</p>
               <p>Zero Setup Time</p>
               <p>Transparent Pricing</p>
@@ -343,11 +343,11 @@ Guest Post Finder</p>
             </div>
           </div>
 
-          <button className="mt-8 text-black text-[20px] transition-transform duration-300 ease-out hover:-translate-y-2 bg-[#FACE49] rounded-[11px] px-[30px] py-4 animate-pulse-shadow ">
+          <button className="mt-8 text-black text-[16px] xl:text-[20px] md:text-[20px] transition-transform duration-300 ease-out hover:-translate-y-2 bg-[#FACE49] rounded-[11px] px-[30px] py-4 animate-pulse-shadow ">
             <a>Claim Your Free Account ➔</a>
           </button>
 
-          <p className="font-sans text-[18px] font-normal leading-[1.1em] tracking-[0px] text-[#00000099]">
+          <p className="font-sans text-[14px] xl:text-[18px] md:text-[18px] font-normal leading-[1.1em] tracking-[0px] text-[#00000099]">
             Free Accounts available only for a Limited Time
           </p>
 

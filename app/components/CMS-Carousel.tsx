@@ -39,7 +39,7 @@ export default function ImageCarousel() {
         >
           {images.map((src, index) => (
             <SwiperSlide key={index}>
-              <div className="flex justify-center items-center h-[25] xl:h-[35] md:h-[35] sm:h-[25] w-full">
+              <div className="flex justify-center items-center h-[35] w-full">
                 <Image
                   src={src}
                   alt={`Software pack ${index + 1}`}
