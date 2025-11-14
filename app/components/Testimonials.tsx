@@ -206,8 +206,8 @@ export default function Testimonials() {
             {/* 2️⃣ Comment */}
             <div className="flex flex-col text-left gap-5 flex-1">
                 <Image src="/img/client-rating.jpg" alt="Stars" width={150} height={28} />
-                <h3 className="font-semibold text-black text-[16px] xl:text-[22px] md:text-[22px] leading-[1.2em] xl:leading-6 md:leading-6 ">{t.title}</h3>
-                <p className="text-[#64698e] text-[16px] xl:text-[20px] md:text-[20px] font-medium leading-[1.1em] xl:leading-6 md:leading-6">{t.text}</p>
+                <h3 className="font-semibold text-black text-[16px] xl:text-[22px] md:text-[22px] leading-[1.3em] xl:leading-6 md:leading-6 ">{t.title}</h3>
+                <p className="text-[#64698e] text-[16px] xl:text-[20px] md:text-[20px] font-medium leading-[1.3em] xl:leading-6 md:leading-6">{t.text}</p>
             </div>
 
             <hr className="border-t border-gray-200 my-2" />

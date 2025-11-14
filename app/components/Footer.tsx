@@ -21,7 +21,7 @@ export default function Footer() {
   return (
     <footer className="max-w-full w-full px-4 pt-16 flex flex-col items-center">
       {/* Top Section */}
-      <div className="max-w-[1150px] w-full justify-between p-4 grid grid-cols-1 gap-0 rounded-[20px] bg-[#FAF1E3] xl:p-12 md:p-12 sm:p-8 xl:grid-cols-[70%_30%] md:grid-cols-1 md:gap-6 sm:grid-cols-1">
+      <div className="max-w-[1150px] w-full justify-between p-4 grid grid-cols-1 gap-6 rounded-[20px] bg-[#FAF1E3] xl:gap-0 xl:p-12 md:p-12 sm:p-8 xl:grid-cols-[70%_30%] md:grid-cols-1 md:gap-6 sm:grid-cols-1">
         <div className="mx-auto space-y-6 flex flex-col gap-0 ">
           <h3 className="text-[28px] text-center leading-[1.1em] font-bold xl:text-left xl:text-[48px] md:text-[32px] md:text-center sm:text-[28px]">
             The Secret Tool used by SEO & Growth Marketing Experts.
@@ -100,7 +100,7 @@ export default function Footer() {
             />
             
           </Link>
-          <p className="text-[16px] text-[#766bea] leading-[1.2ems]">
+          <p className="text-[16px] text-center text-[#766bea] leading-[1.2ems] xl:text-left md:text-left sm:text-left">
             The All-In-One Toolkit for SEO & <br/>Growth Marketing.
           </p>
           <div className="flex gap-4 mt-4">
@@ -116,7 +116,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="w-full grid grid-cols-4 gap-2 xl:grid-cols-3 md:grid-cols-3 sm:grid-cols-3 justify-between xl:justify-between md:justify-center xl:gap-0 md:gap-12 sm:gap-10">    
+        <div className="w-full grid grid-cols-2 gap-2 xl:grid-cols-3 md:grid-cols-3 sm:grid-cols-3 justify-between xl:justify-between md:justify-center xl:gap-0 md:gap-12 sm:gap-10">    
         {/* Column 2 */}
         <ul className="space-y-2 text-black flex flex-col gap-2">
           <li><a href="#faq">FAQ</a></li>
