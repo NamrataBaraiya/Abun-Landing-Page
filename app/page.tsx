@@ -36,10 +36,10 @@ export default function Home() {
     <main className="w-full pb-12 font-Geist flex min-h-screen flex-col items-center justify-center bg-white text-black dark:bg-black">
       <Header />
       {/* SECTION 1 */}
-      <section className="py-30 w-full flex flex-col justify-center items-center text-center gap-6">
+      <section className="py-20 w-full flex flex-col justify-center items-center text-center gap-6 xl:py-30 md:py-30 sm:py-30">
         <div className="max-w-[1200px] w-full flex flex-col justify-center items-center gap-6 px-6">
           
-          <div className="max-w-[1100px] flex flex-row gap-5 flex-wrap items-center justify-between text-center xl:gap-28 md:gap-10 sm:gap-5">
+          <div className="max-w-[1100px] grid grid-cols-3 gap-2 flex-wrap items-center justify-between text-center xl:grid-cols-1 xl:gap-28 md:grid-cols-3 md:gap-10 sm:grid-cols-3 sm:gap-5">
             
             <div className="flex flex-col items-center gap-2 text-center">
               <Image src="/img/rating-star.png" alt="Rating Star" width={115} height={20} />
