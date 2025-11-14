@@ -39,29 +39,29 @@ export default function Home() {
       <section className="py-30 w-full flex flex-col justify-center items-center text-center gap-6">
         <div className="max-w-[1200px] w-full flex flex-col justify-center items-center gap-6 px-6">
           
-          <div className="max-w-[1100px] flex flex-row flex-wrap items-center justify-between text-center xl:gap-28 md:gap-10">
+          <div className="max-w-[1100px] flex flex-row gap-5 flex-wrap items-center justify-between text-center xl:gap-28 md:gap-10 sm:gap-5">
             
             <div className="flex flex-col items-center gap-2 text-center">
               <Image src="/img/rating-star.png" alt="Rating Star" width={115} height={20} />
-              <p className="text-[rgb(102,85,66)] text-[20px] xl:text-[20px] md:text-[14px] sm:text-[12px]">“biggest value bomb”</p>
+              <p className="text-[rgb(102,85,66)] text-[12px] xl:text-[20px] md:text-[14px] sm:text-[12px]">“biggest value bomb”</p>
             </div>
 
             <div className="flex flex-col items-center gap-2 text-center">
               <Image src="/img/rating-star.png" alt="Rating Star" width={115} height={20} />
-              <p className="text-[rgb(102,85,66)] text-[20px] xl:text-[20px] md:text-[14px] sm:text-[12px]">“my entire team can’t stop using it”</p>
+              <p className="text-[rgb(102,85,66)] text-[12px] xl:text-[20px] md:text-[14px] sm:text-[12px]">“my entire team can’t stop using it”</p>
             </div>
 
             <div className="flex flex-col items-center gap-2 text-center">
               <Image src="/img/rating-star.png" alt="Rating Star" width={115} height={20} />
-              <p className="text-[#665542] text-[20px] xl:text-[20px] md:text-[14px] sm:text-[12px]">“helped us scale & grow”</p>
+              <p className="text-[#665542] text-[12px] xl:text-[20px] md:text-[14px] sm:text-[12px]">“helped us scale & grow”</p>
             </div>
           </div>
 
-          <h1 className="font-sans text-[90px] font-bold leading-[1.1em] tracking-[-1px] text-black xl:text-[90px] md:text-[60px] sm:text-[40px]">
+          <h1 className="font-sans text-[40px] font-bold leading-[1.1em] tracking-[-1px] text-black xl:text-[90px] md:text-[60px] sm:text-[40px]">
             The All-In-One Toolkit for <br /> SEO & Growth Marketing.
           </h1>
 
-          <p className="text-[32px] text-black font-medium md:text-[22px] sm:text-[20px]">
+          <p className="text-[20px] text-black font-medium xl:text-[32px] md:text-[22px] sm:text-[20px]">
             Used by 5,325 Marketers, Founders, SEO Experts
             <br />
             to Drive Traffic, Generate Leads, Rank Faster & Achieve Solid Business Growth
