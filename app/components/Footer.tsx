@@ -22,7 +22,7 @@ export default function Footer() {
     <footer className="max-w-full w-full px-4 pt-16 flex flex-col items-center">
       {/* Top Section */}
       <div className="max-w-[1150px] w-full justify-between p-8 grid grid-cols-1 gap-0 rounded-[20px] bg-[#FAF1E3] xl:p-12 md:p-12 sm:p-12 xl:grid-cols-[70%_30%] md:grid-cols-1 md:gap-6">
-        <div className="mx-auto space-y-6 flex flex-row gap-0 xl:flex-col md:flex-col sm:flex-row ">
+        <div className="mx-auto space-y-6 flex flex-col gap-0 ">
           <h3 className="text-[30px] text-center leading-[1.1em] font-bold xl:text-left xl:text-[48px] md:text-[32px] md:text-center">
             The Secret Tool used by SEO & Growth Marketing Experts.
           </h3>
