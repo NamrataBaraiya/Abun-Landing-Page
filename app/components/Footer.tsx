@@ -21,7 +21,7 @@ export default function Footer() {
   return (
     <footer className="max-w-full w-full px-4 pt-16 flex flex-col items-center">
       {/* Top Section */}
-      <div className="max-w-[1150px] w-full justify-between p-12 grid grid-cols-2 gap-0 rounded-[20px] bg-[#FAF1E3] xl:grid-cols-2 md:grid-cols-1 md:gap-6">
+      <div className="max-w-[1150px] w-full justify-between p-12 grid grid-cols-[70%_30%] gap-0 rounded-[20px] bg-[#FAF1E3] xl:grid-cols-[70%_30%] md:grid-cols-1 md:gap-6">
         <div className="mx-auto space-y-6 flex flex-col gap-0 ">
           <h3 className="text-[48px] leading-[1.1em] font-bold xl:text-left md:text-center">
             The Secret Tool used by SEO & Growth Marketing Experts.
@@ -31,7 +31,7 @@ export default function Footer() {
           </h2>
 
           {/* Works With */}
-          <div className="flex gap-5 items-center text-center">
+          <div className="flex flex-col gap-5 items-center text-center xl:flex md:flex sm:flex">
             <a
               href="https://app.abun.com/auth/signup"
               className="py-2 px-4 bg-[#2E64FE] text-white font-[Geist] text-[16px] font-medium leading-6 rounded-[11px] hover:bg-[#6088f5e9] transition"
@@ -65,7 +65,7 @@ export default function Footer() {
         </div>
 
         {/* Reviews */}
-        <div className="flex flex-col justify-center gap-8 text-center xl:flex-col lg:flex-col md:flex-row">
+        <div className="flex flex-row justify-center gap-8 text-center xl:flex-col lg:flex-col md:flex-row sm:flex-row">
           {[
             "“biggest value bomb”",
             "“my entire team can’t stop using it”",
@@ -79,16 +79,16 @@ export default function Footer() {
                 height={30}
                 className="mx-auto"
               />
-              <h3 className="text-lg mt-3">{text}</h3>
+              <h3 className="text-[12px] mt-3 xl:text-lg md:text-lg sm:text-[12px]">{text}</h3>
             </div>
           ))}
         </div>
       </div>
 
       {/* Footer Navigation */}
-      <div className="max-w-[1200px] w-full justify-between xl:w-[1200px] md:max-w-5xl items-top text-black mt-6 grid grid-cols-[25%_75%] justify-between gap-20 pt-12 xl:grid-cols-[25%_75%] xl:gap-20 md:grid-cols-[20%_80%] md:gap-5">
+      <div className="max-w-[1150px] w-full justify-between xl:w-[1150px] md:max-w-full items-top text-black mt-6 grid grid-cols-1 gap-16 pt-12 xl:grid-cols-[30%_60%] xl:gap-20 md:grid-cols-[20%_75%] md:gap-6">
         {/* Column 1 */}
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-4 justify-center items-center xl:items-start xl:justify-start md:items-start md:justify-start sm:justify-center">
           <Link href="/">
             
             <Image
@@ -116,7 +116,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="w-full flex flex-row justify-between">    
+        <div className="w-full grid grid-cols-2 xl:grid-cols-3 md:grid-cols-3 sm:grid-cols-3 justify-between xl:justify-between md:justify-center xl:gap-0 md:gap-12">    
         {/* Column 2 */}
         <ul className="space-y-2 text-black flex flex-col gap-2">
           <li><a href="#faq">FAQ</a></li>
@@ -146,7 +146,7 @@ export default function Footer() {
       </div>
 
       {/* Bottom Section */}
-      <div className="max-w-[1150px] xl:w-[1150px] pt-10 flex justify-between items-center gap-8 text-[11px] text-black xl:gap-8 xl:flex xl:flex-row md:flex-col md:gap-4 ">
+      <div className="max-w-[1150px] xl:w-[1150px] pt-10 flex flex-col justify-between items-center gap-8 text-[11px] text-black xl:gap-8 xl:flex xl:flex-row md:flex-col md:gap-4 sm:flex-col ">
         <div className="flex flex-wrap justify-center gap-8">
           <a href="/terms-conditions">Terms & Conditions</a>
           <a href="/privacy-policy">Privacy Policy</a>

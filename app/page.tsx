@@ -88,7 +88,7 @@ export default function Home() {
           <p className="text-[18px] font-medium leading-[1.1em] tracking-[-0.5px] text-[#4A4583]">AI SEO & Marketing Tools</p>
           <h2 className="text-[48px] font-bold leading-[1.1em] tracking-[-1px] text-black">Start Scaling your Traffic</h2>
 
-          <div className="w-full pt-7 max-w-7xl grid grid-cols-3 gap-5 xl:gap-5 md:gap-2 items-start justify-center text-center ">
+          <div className="w-full pt-7 max-w-7xl grid grid-cols-1 xl:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-5 xl:gap-5 md:gap-2 items-start justify-center text-center ">
             {/* 1 */}
             <div className="flex p-[25px] min-h-[220px] flex-col gap-3 item-left text-left bg-[#FFFFFF] border border-[#D2D2EB] rounded-[14px] shadow-[0_3px_3px_0_rgba(19,48,66,0.07)] transition-transform duration-300 hover:scale-[1.02] hover:cursor-default">
               <Image className="p-2.5 bg-[#f1f1f9] rounded-[10px]" src="/img/Script-2-Streamline-Plump.png" alt="AI Articles" width={40} height={40} />
@@ -262,7 +262,7 @@ Guest Post Finder</p>
           {/* Animated Counter */}
           <div className="elementor-counter mt-0">
             <div className="elementor-counter-number-wrapper flex justify-center items-center text-center">
-              <span className="font-sans text-[100px] xl:text-[100px] sm:text-[50px] font-bold leading-[1.1em] tracking-[-1px] text-black">
+              <span className="font-sans text-[50px] xl:text-[100px] md:text-[80px] sm:text-[50px] font-bold leading-[1.1em] tracking-[-1px] text-black">
                 {formattedCount}
               </span>
             </div>
@@ -274,12 +274,12 @@ Guest Post Finder</p>
           
           </div>
 
-          <div className="w-full p-16 grid space-between grid-cols-2 gap-20  xl:grid-cols-[60%_40%] md:flex md:flex-row rounded-[20px] bg-[#FAF1E3] ">
+          <div className="w-full p-16 grid space-between grid-cols-2 gap-20 xl:grid-cols-[50%_40%] md:grid-cols-1 rounded-[20px] bg-[#FAF1E3] ">
               <div className="flex flex-col gap-5 text-left xl:text-left md:text-center">
                 <h3 className="text-[40px] text-[#4F340A] leading-[1.1em] font-semibold">We integrate with all the  latest tech, so you are not left behind.</h3>
                 <p className="text-[20px] text-[#8A5E19] leading-[1.4em]" >Our system is built to support top platforms<br/> today, and ready for what’s next tomorrow.</p>
               </div>
-              <div className="flex justify-end ">
+              <div className="flex justify-end xl:justify-end md:justify-center ">
                 <Image src="/img/Software-pack.png" alt="Software Pack" width={900} height={400} />
               </div>                      
             
@@ -317,7 +317,7 @@ Guest Post Finder</p>
           <h2 className="pt-18 text-[35px] text-black font-medium leading-[1.1em]">We are your unfair advantage.</h2>
           <p className="text-[35px] text-[#2E64FE] font-medium leading-[1.1em]" >Our users see guaranteed growth <br/>within 30 days.</p>
 
-          <div className="grid grid-cols-3 gap-4 py-12 text-[25px] text-black">
+          <div className="grid grid-cols-3 gap-4 py-12 text-[25px] text-black xl:text-[25px] md:text-[16px]">
             <div className="flex flex-col gap-4">
               <p>25+ Tools</p>
               <p>Feature Rich Tools</p>
