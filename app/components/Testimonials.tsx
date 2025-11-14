@@ -178,14 +178,14 @@ export default function Testimonials() {
         </div>     
 
       {/* Testimonials Grid */}
-        <div className="w-full px-14 columns-1 sm:columns-2 lg:columns-3 gap-6 space-y-6">
+        <div className="w-full px-14 columns-1 xl:px-14 xl:gap-6 md:px-2 md:gap-3 sm:columns-2 lg:columns-3 gap-6 space-y-6">
         {testimonials.map((t, index) => (
             <div
             key={index}
             className="break-inside-avoid border border-gray-300 gap-2 rounded-[20px] bg-white p-6 flex flex-col justify-between"
             >
             {/* 1️⃣ User Info */}
-            <div className="flex items-center gap-4 mt-2 mb-1">
+            <div className="flex items-center gap-4 mt-2 mb-1 ">
                 <div className="w-14 h-14 flex items-center justify-center rounded-full bg-[#ffddc0] text-lg font-semibold text-gray-700">
                 {t.avatar}
                 </div>

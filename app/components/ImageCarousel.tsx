@@ -19,7 +19,7 @@ export default function ImageCarousel() {
 
   return (
     <div className="flex justify-center w-full bg-white pb-16 overflow-hidden">
-      <div className="max-w-[1200px] xl:w-[1200px] md:max-w-[600] sm:w-[400px]">
+      <div className="max-w-[1250px] xl:w-[1250px] xl:gap-8 xl:justify-between md:max-w-5xl sm:w-[400px]">
         <Swiper
           modules={[Autoplay]}
           loop={true}
@@ -35,7 +35,7 @@ export default function ImageCarousel() {
             640: { slidesPerView: 3, spaceBetween: 15 },
             1024: { slidesPerView: 6, spaceBetween: 20 },
           }}
-          className="w-full"
+          className="max-w-[1200px] w-full gap-8"
         >
           {images.map((src, index) => (
             <SwiperSlide key={index}>

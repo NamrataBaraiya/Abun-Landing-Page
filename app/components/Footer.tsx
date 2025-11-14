@@ -19,14 +19,14 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="max-w-full px-4 pt-16 flex flex-col items-center md:px-16 lg:px-28">
+    <footer className="max-w-full w-full px-4 pt-16 flex flex-col items-center">
       {/* Top Section */}
-      <div className="max-w-[1150px] p-12 grid grid-cols-[65%_35%] gap-4 rounded-[20px] bg-[#FAF1E3]">
-        <div className="mx-auto space-y-6 flex flex-col gap-0 md:flex-row md:items-center">
-          <h3 className="text-[48px] leading-[1.1em] font-bold">
+      <div className="max-w-[1150px] w-full justify-between p-12 grid grid-cols-2 gap-0 rounded-[20px] bg-[#FAF1E3] xl:grid-cols-2 md:grid-cols-1 md:gap-6">
+        <div className="mx-auto space-y-6 flex flex-col gap-0 ">
+          <h3 className="text-[48px] leading-[1.1em] font-bold xl:text-left md:text-center">
             The Secret Tool used by SEO & Growth Marketing Experts.
           </h3>
-          <h2 className="text-[22px] leading-[1.4em] font-medium text-[rgb(102,85,66)]">
+          <h2 className="text-[22px] leading-[1.4em] font-medium text-[rgb(102,85,66)] xl:text-left md:text-center">
             Scale your Sales & Marketing with our all in one AI<br /> tools that give you an unfair advantage.
           </h2>
 
@@ -34,7 +34,7 @@ export default function Footer() {
           <div className="flex gap-5 items-center text-center">
             <a
               href="https://app.abun.com/auth/signup"
-              className="py-2 px-4 bg-[#2E64FE] text-white font-[Geist] text-[16px] font-medium leading-[24px] rounded-[11px] hover:bg-[#6088f5e9] transition"
+              className="py-2 px-4 bg-[#2E64FE] text-white font-[Geist] text-[16px] font-medium leading-6 rounded-[11px] hover:bg-[#6088f5e9] transition"
             >
               START FREE
             </a>
@@ -65,7 +65,7 @@ export default function Footer() {
         </div>
 
         {/* Reviews */}
-        <div className="flex flex-col justify-center gap-8 text-center md:flex-row">
+        <div className="flex flex-col justify-center gap-8 text-center xl:flex-col lg:flex-col md:flex-row">
           {[
             "“biggest value bomb”",
             "“my entire team can’t stop using it”",
@@ -86,7 +86,7 @@ export default function Footer() {
       </div>
 
       {/* Footer Navigation */}
-      <div className="max-w-[1150px] items-top text-black mt-6 grid grid-cols-[25%_60%] justify-between gap-20 pt-12">
+      <div className="max-w-[1200px] w-full justify-between xl:w-[1200px] md:max-w-5xl items-top text-black mt-6 grid grid-cols-[25%_75%] justify-between gap-20 pt-12 xl:grid-cols-[25%_75%] xl:gap-20 md:grid-cols-[20%_80%] md:gap-5">
         {/* Column 1 */}
         <div className="flex flex-col gap-4">
           <Link href="/">
@@ -146,12 +146,12 @@ export default function Footer() {
       </div>
 
       {/* Bottom Section */}
-      <div className="w-[1150px] pt-10 flex flex-col md:flex-row justify-between items-center gap-8 text-[11px] text-black">
+      <div className="max-w-[1150px] xl:w-[1150px] pt-10 flex justify-between items-center gap-8 text-[11px] text-black xl:gap-8 xl:flex xl:flex-row md:flex-col md:gap-4 ">
         <div className="flex flex-wrap justify-center gap-8">
           <a href="/terms-conditions">Terms & Conditions</a>
           <a href="/privacy-policy">Privacy Policy</a>
         </div>
-        <div className="flex flex-col md:flex-row items-center gap-0">
+        <div className="flex flex-row items-center gap-0">
           <Image className="mt-2" src="/img/image-123.png" alt="Microsoft" width={250} height={100} />
           <Image src="/img/nv.png" alt="NVIDIA" width={150} height={60} />
         </div>
