@@ -274,18 +274,18 @@ Guest Post Finder</p>
           
           </div>
 
-          <div className="w-full p-16 grid space-between grid-cols-2 gap-20 xl:grid-cols-[50%_40%] md:grid-cols-1 rounded-[20px] bg-[#FAF1E3] ">
-              <div className="flex flex-col gap-5 text-left xl:text-left md:text-center">
+          <div className="w-full p-16 grid space-between grid-cols-1 gap-5 xl:grid-cols-[50%_40%] xl:p-16 md:p-16 md:grid-cols-1 sm:p-5 sm:grid-cols-1 rounded-[20px] bg-[#FAF1E3] ">
+              <div className="flex flex-col gap-5 text-center xl:text-left md:text-center sm:text-center">
                 <h3 className="text-[40px] text-[#4F340A] leading-[1.1em] font-semibold">We integrate with all the  latest tech, so you are not left behind.</h3>
                 <p className="text-[20px] text-[#8A5E19] leading-[1.4em]" >Our system is built to support top platforms<br/> today, and ready for what’s next tomorrow.</p>
               </div>
-              <div className="flex justify-end xl:justify-end md:justify-center ">
+              <div className="flex justify-center xl:justify-end md:justify-center sm:justify:center">
                 <Image src="/img/Software-pack.png" alt="Software Pack" width={900} height={400} />
               </div>                      
             
           </div>
 
-          <div className="w-full grid grid-cols-2 gap-7 pt-4">
+          <div className="w-full grid grid-cols-1 gap-7 pt-4 xl:grid-col-2 md:grid-col-2 sm:grid-col-1">
               <div className="flex flex-col pt-4 pb-2 gap-3 text-center rounded-[20px] bg-[#e4f1ff] ">
                 <CMS_Carousel />    
                 <p className="text-[35px] text-[#264363] leading-[1.1em] font-bold">Full Fledged Integrations</p>
@@ -317,7 +317,7 @@ Guest Post Finder</p>
           <h2 className="pt-18 text-[35px] text-black font-medium leading-[1.1em]">We are your unfair advantage.</h2>
           <p className="text-[35px] text-[#2E64FE] font-medium leading-[1.1em]" >Our users see guaranteed growth <br/>within 30 days.</p>
 
-          <div className="grid grid-cols-3 gap-4 py-12 text-[25px] text-black xl:text-[25px] md:text-[16px]">
+          <div className="grid grid-cols-1 xl:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 gap-4 py-12 text-[25px] text-black xl:text-[25px] md:text-[16px]">
             <div className="flex flex-col gap-4">
               <p>25+ Tools</p>
               <p>Feature Rich Tools</p>

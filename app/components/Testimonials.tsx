@@ -178,7 +178,7 @@ export default function Testimonials() {
         </div>     
 
       {/* Testimonials Grid */}
-        <div className="w-full px-14 columns-1 xl:px-14 xl:gap-6 md:px-2 md:gap-3 sm:columns-2 lg:columns-3 gap-6 space-y-6">
+        <div className="w-full px-4 columns-1 xl:px-14 xl:gap-6 md:px-2 md:gap-3 sm:columns-2 lg:columns-3 gap-6 space-y-6">
         {testimonials.map((t, index) => (
             <div
             key={index}

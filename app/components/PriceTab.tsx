@@ -46,7 +46,7 @@ export default function Tabs() {
             </div>            
             <div className="max-w-[1350px] w-full grid grid-cols-1 py-10 text-[16px] text-[#000c60] text-left xl:gap-0 xl:grid-cols-4 md:gap-4  md:grid-cols-2">
 {/* ------------------------------------------------Seed---------------------------------------- */}
-                          <div className="flex flex-col pl-5 pr-4 pt-3 pb-6 gap-0 border-2 border-r-0 mr-[-7px] border-black rounded-tl-[10px] rounded-bl-[10px] rounded-tr-none rounded-br-none xl:border-r-0 xl:rounded-tr-none xl:rounded-br-none xl:mr-[-7px] md:mr-0 md:border-2 md:rounded-[10px]">
+                          <div className="flex flex-col pl-5 pr-4 pt-3 pb-6 gap-0 border-2  border-black rounded-[10px] xl:border-r-0 xl:rounded-tr-none xl:rounded-br-none xl:mr-[-7px] md:mr-0 md:border-2 md:rounded-[10px]">
                               <h4 className="text-[40px] text-black text-bold">Seed</h4>
                               <span className="flex content-center items-center text-[30px] text-[#8E8E90] gap-2 "><span className="line-through ">$24</span><p className="text-[16px] flex align-center content-center">per month</p></span>
                               <span className="flex content-end items-baseline text-[60px] text-black gap-2"><b>$12</b><p className="text-[16px] text-black font-regular decoration-none flex content-end items-baseline">first month</p></span>
