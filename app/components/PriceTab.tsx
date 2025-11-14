@@ -44,7 +44,7 @@ export default function Tabs() {
                 <p className="text-[20px] text-[#2E64FE] font-medium leading-[1.1em]" >Limited Time Offer: 50% OFF for First Month. No Coupon Code Required.</p>
 
             </div>            
-            <div className="max-w-[1350px] w-full grid grid-cols-1 py-10 text-[16px] text-[#000c60] text-left xl:gap-0 xl:grid-cols-4 md:gap-4  md:grid-cols-2">
+            <div className="max-w-[1350px] w-full grid grid-cols-1 py-10 gap-6 text-[16px] text-[#000c60] text-left xl:gap-0 xl:grid-cols-4 md:gap-4 md:grid-cols-2 sm:grid-cols-1 sm:gap-6">
 {/* ------------------------------------------------Seed---------------------------------------- */}
                           <div className="flex flex-col pl-5 pr-4 pt-3 pb-6 gap-0 border-2  border-black rounded-[10px] xl:border-r-0 xl:rounded-tr-none xl:rounded-br-none xl:mr-[-7px] md:mr-0 md:border-2 md:rounded-[10px]">
                               <h4 className="text-[40px] text-black text-bold">Seed</h4>
@@ -93,7 +93,7 @@ export default function Tabs() {
                           </div>
 
                           {/* --------------------------------Starter---------------------------------------- */}
-                          <div className="flex flex-col pl-5 pr-4 pt-3 pb-6 gap-0 border-2 border-r-0 mr-[-7px] border-black rounded-tl-[10px] rounded-bl-[10px] rounded-tr-none rounded-br-none xl:border-r-0 xl:rounded-tr-none xl:rounded-br-none xl:mr-[-7px] md:mr-0 md:border md:rounded-[10px]">
+                          <div className="flex flex-col pl-5 pr-4 pt-3 pb-6 gap-0 border-2  border-black rounded-[10px] xl:border-r-0 xl:rounded-tr-none xl:rounded-br-none xl:mr-[-7px] md:mr-0 md:border-2 md:rounded-[10px]">
                             <h4 className="text-[40px] text-black text-bold">Starter</h4>
                               <span className="flex content-center items-center text-[30px] text-[#8E8E90] gap-2 "><span className="line-through ">$59</span><p className="text-[16px] flex align-center content-center">per month</p></span>
                               <span className="flex content-end items-baseline text-[60px] text-black gap-2"><b>$29</b><p className="text-[16px] text-black font-regular decoration-none flex content-end items-baseline">first month</p></span>
@@ -135,12 +135,12 @@ export default function Tabs() {
 
                               </ul>
                               <div className="w-full min-w-full justify-center flex items-center content-center">
-                                  <button className="w-fit mt-5 text-center text-[18px] py-[10px] px-[60px] border-black border-solid border-[1px] text-black rounded-[100px] hover:bg-[#2E64FE] hover:text-white hover:border-[#2E64FE] hover:-translate-y-2 focus:bg-[#2E64FE] focus:text-white focus:border-[#2E64FE] focus:-translate-y-2 transition-transform duration-300"><a>PROCEED</a></button>
+                                  <button className="w-fit mt-5 text-center text-[18px] py-2.5 px-[60px] border-black border-solid border text-black rounded-[100px] hover:bg-[#2E64FE] hover:text-white hover:border-[#2E64FE] hover:-translate-y-2 focus:bg-[#2E64FE] focus:text-white focus:border-[#2E64FE] focus:-translate-y-2 transition-transform duration-300"><a>PROCEED</a></button>
                               </div>
                           </div>
 
                           {/* --------------------------------Growth---------------------------------------- */}
-                          <div className="flex flex-col pl-5 pr-4 pt-3 pb-6 gap-0 border-2 border-r-0 mr-[-7px] border-black rounded-tl-[10px] rounded-bl-[10px] rounded-tr-[0px] rounded-br-[0px] xl:border-r-0 xl:rounded-tr-none xl:rounded-br-none xl:mr-[-7px] md:mr-0 md:border-2 md:rounded-[10px]">
+                          <div className="flex flex-col pl-5 pr-4 pt-3 pb-6 gap-0 border-2  border-black rounded-[10px] xl:border-r-0 xl:rounded-tr-none xl:rounded-br-none xl:mr-[-7px] md:mr-0 md:border-2 md:rounded-[10px]">
                              <h4 className="text-[40px] text-black text-bold">Growth</h4>
                               <span className="flex content-center items-center text-[30px] text-[#8E8E90] gap-2 "><span className="line-through ">$79</span><p className="text-[16px] flex align-center content-center">per month</p></span>
                               <span className="flex content-end items-baseline text-[60px] text-black gap-2"><b>$39</b><p className="text-[16px] text-black font-regular decoration-none flex content-end items-baseline">first month</p></span>
@@ -246,7 +246,7 @@ export default function Tabs() {
             </div>
             <div className="max-w-[1350px] w-full grid grid-cols-1 py-10 text-[16px] text-[#000c60] text-left xl:gap-0 xl:grid-cols-4 md:gap-4 md:grid-cols-2">
 {/* ------------------------------------------------Seed---------------------------------------- */}
-                          <div className="flex flex-col pl-5 pr-4 pt-3 pb-6 gap-0 border-2 border-r-0 mr-[-7px] border-black rounded-tl-[10px] rounded-bl-[10px] rounded-tr-none rounded-br-none xl:border-r-0 xl:rounded-tr-none xl:rounded-br-none xl:mr-[-7px] md:mr-0 md:border-2 md:rounded-[10px]">
+                          <div className="flex flex-col pl-5 pr-4 pt-3 pb-6 gap-0 border-2  border-black rounded-[10px] xl:border-r-0 xl:rounded-tr-none xl:rounded-br-none xl:mr-[-7px] md:mr-0 md:border-2 md:rounded-[10px]">
                               <h4 className="text-[40px] text-black text-bold">Seed</h4>
                               <span className="flex content-end items-baseline text-[60px] text-black gap-2"><b>$12</b><p className="text-[16px] text-black font-regular decoration-none flex content-end items-baseline">per month</p></span>
                               <span className="leading-[1em] pb-8"> Billed Yearly</span>          
@@ -292,7 +292,7 @@ export default function Tabs() {
                           </div>
 
                           {/* --------------------------------Starter---------------------------------------- */}
-                          <div className="flex flex-col pl-5 pr-4 pt-3 pb-6 gap-0 border-2 border-r-0 mr-[-7px] border-black rounded-tl-[10px] rounded-bl-[10px] rounded-tr-none rounded-br-none xl:border-r-0 xl:rounded-tr-none xl:rounded-br-none xl:mr-[-7px] md:mr-0 md:border-2 md:rounded-[10px]">
+                          <div className="flex flex-col pl-5 pr-4 pt-3 pb-6 gap-0 border-2  border-black rounded-[10px] xl:border-r-0 xl:rounded-tr-none xl:rounded-br-none xl:mr-[-7px] md:mr-0 md:border-2 md:rounded-[10px]">
                               <h4 className="text-[40px] text-black text-bold">Starter</h4>
                               <span className="flex content-end items-baseline text-[60px] text-black gap-2"><b>$29</b><p className="text-[16px] text-black font-regular decoration-none flex content-end items-baseline">per month</p></span>
                               <span className="leading-[1em] pb-8"> Billed Yearly</span>  
@@ -338,7 +338,7 @@ export default function Tabs() {
                           </div>
 
                           {/* --------------------------------Growth---------------------------------------- */}
-                          <div className="flex flex-col pl-5 pr-4 pt-3 pb-6 gap-0 border-2 border-r-0 mr-[-7px] border-black rounded-tl-[10px] rounded-bl-[10px] rounded-tr-none rounded-br-none xl:border-r-0 xl:rounded-tr-none xl:rounded-br-none xl:mr-[-7px] md:mr-0 md:border-2 md:rounded-[10px]">
+                          <div className="flex flex-col pl-5 pr-4 pt-3 pb-6 gap-0 border-2  border-black rounded-[10px] xl:border-r-0 xl:rounded-tr-none xl:rounded-br-none xl:mr-[-7px] md:mr-0 md:border-2 md:rounded-[10px]">
                               <h4 className="text-[40px] text-black text-bold">Growth</h4>
                               <span className="flex content-end items-baseline text-[60px] text-black gap-2"><b>$39</b><p className="text-[16px] text-black font-regular decoration-none flex content-end items-baseline">per month</p></span>
                               <span className="leading-[1em] pb-8"> Billed Yearly</span>

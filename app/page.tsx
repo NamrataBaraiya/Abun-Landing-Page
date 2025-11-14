@@ -317,7 +317,7 @@ Guest Post Finder</p>
           <h2 className="pt-18 text-[35px] text-black font-medium leading-[1.1em]">We are your unfair advantage.</h2>
           <p className="text-[35px] text-[#2E64FE] font-medium leading-[1.1em]" >Our users see guaranteed growth <br/>within 30 days.</p>
 
-          <div className="grid grid-cols-1 xl:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 gap-4 py-12 text-[25px] text-black xl:text-[25px] md:text-[16px]">
+          <div className="grid grid-cols-1 xl:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 gap-4 py-12 text-[16px] text-black xl:text-[25px] md:text-[16px] sm:text-[16px]">
             <div className="flex flex-col gap-4">
               <p>25+ Tools</p>
               <p>Feature Rich Tools</p>

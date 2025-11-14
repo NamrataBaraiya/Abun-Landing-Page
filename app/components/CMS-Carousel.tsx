@@ -31,7 +31,7 @@ export default function ImageCarousel() {
           spaceBetween={20}
           grabCursor={true}
           breakpoints={{
-            320: { slidesPerView: 2, spaceBetween: 10 },
+            320: { slidesPerView: 3, spaceBetween: 5 },
             640: { slidesPerView: 3, spaceBetween: 15 },
             1024: { slidesPerView: 4, spaceBetween: 30 },
           }}
@@ -39,7 +39,7 @@ export default function ImageCarousel() {
         >
           {images.map((src, index) => (
             <SwiperSlide key={index}>
-              <div className="flex justify-center items-center h-[35] w-full">
+              <div className="flex justify-center items-center h-[25] xl:h-[35] md:h-[35] sm:h-[25] w-full">
                 <Image
                   src={src}
                   alt={`Software pack ${index + 1}`}

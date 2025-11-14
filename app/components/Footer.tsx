@@ -21,12 +21,12 @@ export default function Footer() {
   return (
     <footer className="max-w-full w-full px-4 pt-16 flex flex-col items-center">
       {/* Top Section */}
-      <div className="max-w-[1150px] w-full justify-between p-8 grid grid-cols-1 gap-0 rounded-[20px] bg-[#FAF1E3] xl:p-12 md:p-12 sm:p-12 xl:grid-cols-[70%_30%] md:grid-cols-1 md:gap-6">
+      <div className="max-w-[1150px] w-full justify-between p-4 grid grid-cols-1 gap-0 rounded-[20px] bg-[#FAF1E3] xl:p-12 md:p-12 sm:p-8 xl:grid-cols-[70%_30%] md:grid-cols-1 md:gap-6 sm:grid-cols-1">
         <div className="mx-auto space-y-6 flex flex-col gap-0 ">
-          <h3 className="text-[30px] text-center leading-[1.1em] font-bold xl:text-left xl:text-[48px] md:text-[32px] md:text-center">
+          <h3 className="text-[28px] text-center leading-[1.1em] font-bold xl:text-left xl:text-[48px] md:text-[32px] md:text-center sm:text-[28px]">
             The Secret Tool used by SEO & Growth Marketing Experts.
           </h3>
-          <h2 className="text-[18px] text-center leading-[1.4em] font-medium text-[rgb(102,85,66)] xl:text-[22px] xl:text-left md:text-[18px] md:text-center">
+          <h2 className="text-[16px] text-center leading-[1.4em] font-medium text-[rgb(102,85,66)] xl:text-[22px] xl:text-left md:text-[18px] md:text-center sm:text-[16px]">
             Scale your Sales & Marketing with our all in one AI<br /> tools that give you an unfair advantage.
           </h2>
 
@@ -43,12 +43,12 @@ export default function Footer() {
             </p>
 
             {/* Continuous Horizontal Carousel */}
-            <div className="relative max-w-[400px] overflow-hidden xl:w-[450px] md:w-[450px] sm:w-[450px]">
+            <div className="relative max-w-[300px] overflow-hidden xl:w-[450px] md:w-[450px] sm:w-[400px]">
               <div className="flex animate-scroll whitespace-nowrap">
                 {[...logos, ...logos].map((logo, i) => (
                   <div
                     key={i}
-                    className="flex justify-center items-center px-6 shrink-0"
+                    className="flex justify-center items-center px-2 xl:px-6 md:px-6 sm:px-2 shrink-0"
                   >
                     <Image
                       src={logo.src}
@@ -116,7 +116,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="w-full grid grid-cols-2 xl:grid-cols-3 md:grid-cols-3 sm:grid-cols-3 justify-between xl:justify-between md:justify-center xl:gap-0 md:gap-12">    
+        <div className="w-full grid grid-cols-4 gap-2 xl:grid-cols-3 md:grid-cols-3 sm:grid-cols-3 justify-between xl:justify-between md:justify-center xl:gap-0 md:gap-12 sm:gap-10">    
         {/* Column 2 */}
         <ul className="space-y-2 text-black flex flex-col gap-2">
           <li><a href="#faq">FAQ</a></li>
@@ -151,7 +151,7 @@ export default function Footer() {
           <a href="/terms-conditions">Terms & Conditions</a>
           <a href="/privacy-policy">Privacy Policy</a>
         </div>
-        <div className="flex flex-row items-center gap-0">
+        <div className="flex flex-col items-center gap-0 xl:grid-row md:grid-row sm:grid-row">
           <Image className="mt-2" src="/img/image-123.png" alt="Microsoft" width={250} height={100} />
           <Image src="/img/nv.png" alt="NVIDIA" width={150} height={60} />
         </div>
