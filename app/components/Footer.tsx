@@ -34,7 +34,7 @@ export default function Footer() {
           <div className="flex flex-col gap-5 items-center text-center xl:flex xl:flex-row md:flex md:flex-row sm:flex sm:flex:row">
             <a
               href="https://app.abun.com/auth/signup"
-              className="w-full order-3 xl:order-1 md:order-1 sm:order-1 xl:w-[fit] md:w-[fit] sm:w-[fit] py-2 px-4 bg-[#2E64FE] text-white font-[Geist] text-[16px] font-medium leading-6 rounded-[11px] hover:bg-[#6088f5e9] transition"
+              className="w-full order-3 xl:order-1 md:order-1 sm:order-1 xl:w-[250px] md:w-[250] sm:w-[250] py-2 px-4 bg-[#2E64FE] text-white font-[Geist] text-[16px] font-medium leading-6 rounded-[11px] hover:bg-[#6088f5e9] transition"
             >
               START FREE
             </a>

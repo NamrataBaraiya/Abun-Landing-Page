@@ -49,7 +49,7 @@ export default function Header() {
         </nav>
 
         {/* Right: CTA */}
-        <div className="hidden md:flex">
+        <div className=" md:flex">
           <Link
             href="https://app.abun.com/auth/signup"
             className="bg-[#2E64FE] text-white px-6 py-3 rounded-[10px] text-[16px] font-medium hover:bg-[#6088f5e9] transition"
@@ -59,6 +59,7 @@ export default function Header() {
         </div>
 
         {/* Mobile Menu Button */}
+        
         <button
           className="md:hidden flex flex-col gap-1"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -73,7 +74,7 @@ export default function Header() {
       {/* Mobile Menu */}
       {isMenuOpen && (
         <div className="md:hidden bg-white border-t border-gray-200">
-          <nav className="flex flex-col items-center py-4 space-y-4">
+          <nav className="flex flex-col text-left bg-[#2E64FE] text-white px-6 py-3 space-y-4">
             {navLinks.map((link) => (
               <Link
                 key={link.name}
@@ -87,14 +88,9 @@ export default function Header() {
               >
                 {link.name}
               </Link>
-            ))}
-            <Link
-              href="https://app.abun.com/auth/signup"
-              className="bg-[#2E64FE] text-white px-5 py-2 rounded-[10px] text-[16px] font-medium hover:bg-[#6088f5e9] transition"
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Start Free
-            </Link>
+            ))}          
+            
+
           </nav>
         </div>
       )}

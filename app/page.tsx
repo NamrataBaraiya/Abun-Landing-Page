@@ -342,7 +342,7 @@ Guest Post Finder</p>
             </div>
           </div>
 
-          <button className="mt-8 text-black text-[16px] xl:text-[20px] md:text-[20px] transition-transform duration-300 ease-out hover:-translate-y-2 bg-[#FACE49] rounded-[11px] px-[30px] py-4 animate-pulse-shadow ">
+          <button className="mt-5 text-black text-[16px] xl:text-[20px] xl:mt-8 md:mt-8 md:text-[20px] transition-transform duration-300 ease-out hover:-translate-y-2 bg-[#FACE49] rounded-[11px] px-[30px] py-4 animate-pulse-shadow ">
             <a>Claim Your Free Account ➔</a>
           </button>
 
