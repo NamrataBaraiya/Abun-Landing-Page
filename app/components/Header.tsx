@@ -34,7 +34,7 @@ export default function Header() {
             alt="Abun Logo"
             width={170}
             height={50}
-            className="w-[90px] object-contain xl:w-[170px] md:w-[150px] sm:w-[100px]"
+            className="w-[100px] object-contain xl:w-[170px] md:w-[150px] sm:w-[100px]"
           />
         </Link>
 
@@ -59,20 +59,19 @@ export default function Header() {
         <div className="flex items-center gap-4">
           <Link
             href="https://app.abun.com/auth/signup"
-            className="bg-[#2E64FE] text-white px-4 py-2 rounded-[10px] text-[14px] font-medium hover:bg-[#6088f5e9] transition md:flex"
+            className="bg-[#2E64FE] text-white px-2 py-2 rounded-[6px] text-[12px] xl:text-[14px] md:text-[12px] font-medium hover:bg-[#6088f5e9] transition md:flex"
           >
             GET STARTED
           </Link>
 
           {/* Hamburger Icon */}
           <button
-            className="md:hidden flex flex-col gap-1 border-2 border-[#2E64FE] rounded-6 p-4"
+            className="md:hidden flex flex-col gap-1 border-2 border-[#2E64FE] rounded-[6px] p-2"
             onClick={() => setIsMenuOpen(true)}
             aria-label="Toggle Menu"
           >
-            <span className="block w-6 h-[2px] bg-[#2E64FE]"></span>
-            <span className="block w-6 h-[2px] bg-[#2E64FE]"></span>
-            <span className="block w-6 h-[2px] bg-[#2E64FE]"></span>
+            <span className="block w-5 h-[2px] bg-[#2E64FE]"></span>
+            <span className="block w-5 h-[2px] bg-[#2E64FE]"></span>
           </button>
         </div>
       </div>
