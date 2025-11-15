@@ -230,7 +230,7 @@ export default function Testimonials() {
         ))}
         </div>
         {/* Bottom Glow Effect */}
-      <div className="mt-[-220px] left-0 w-full h-[150px] xl:h-[400px] xl:mt-[-420px] md:h-[200px] md:mt-[-220px] sm:h-[200px] bg-gradient-to-b from-[#1D020200] via-[#ffffff80] to-white pointer-events-none z-2" />
+      <div className="mt-[-220px] z-2 left-0 w-full h-[150px] xl:h-[400px] xl:mt-[-420px] md:h-[200px] md:mt-[-220px] sm:h-[200px] bg-gradient-to-b from-[#1D020200] via-[#ffffff80] to-white pointer-events-none z-2" />
         
     </section>
   );

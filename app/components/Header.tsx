@@ -27,7 +27,7 @@ export default function Header() {
             alt="Abun Logo"
             width={170}
             height={50}
-            className="object-contain"
+            className="w-[80px] object-contain xl:w-[170px] md:w-[150px] sm:w-[100px]"
           />
         </Link>
 
@@ -81,8 +81,8 @@ export default function Header() {
                 href={link.href}
                 className={`text-[16px] font-medium transition no-underline ${
                   pathname === link.href
-                    ? "text-[#766BEA]"
-                    : "text-[#1E1E1E] hover:text-[#766BEA]"
+                    ? "text-black"
+                    : "text-white hover:text-black"
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
