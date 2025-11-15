@@ -34,7 +34,7 @@ export default function Header() {
             alt="Abun Logo"
             width={170}
             height={50}
-            className="w-[100px] object-contain xl:w-[170px] md:w-[150px] sm:w-[100px]"
+            className="w-[110px] object-contain xl:w-[170px] md:w-[150px] sm:w-[110px]"
           />
         </Link>
 
@@ -56,7 +56,7 @@ export default function Header() {
         </nav>
 
         {/* CTA + Mobile Hamburger (Right) */}
-        <div className="flex items-center gap-4">
+        <div className="flex items-center gap-6">
           <Link
             href="https://app.abun.com/auth/signup"
             className="bg-[#2E64FE] text-white px-2 py-2 rounded-[6px] text-[12px] xl:text-[14px] md:text-[12px] font-medium hover:bg-[#6088f5e9] transition md:flex"
@@ -66,12 +66,12 @@ export default function Header() {
 
           {/* Hamburger Icon */}
           <button
-            className="md:hidden flex flex-col gap-1 border-2 border-[#2E64FE] rounded-[6px] p-2"
+            className="md:hidden flex flex-col gap-1 border-2 border-[#2E64FE] rounded-[6px] px-2 py-3"
             onClick={() => setIsMenuOpen(true)}
             aria-label="Toggle Menu"
           >
-            <span className="block w-5 h-[2px] bg-[#2E64FE]"></span>
-            <span className="block w-5 h-[2px] bg-[#2E64FE]"></span>
+            <span className="block w-4 h-[2px] bg-[#2E64FE]"></span>
+            <span className="block w-4 h-[2px] bg-[#2E64FE]"></span>
           </button>
         </div>
       </div>
