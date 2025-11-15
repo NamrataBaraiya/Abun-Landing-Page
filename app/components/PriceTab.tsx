@@ -21,14 +21,14 @@ export default function Tabs() {
 
         <button
           onClick={() => setActiveTab("annual")}
-          className={`py-2 px-6 text-lg font-medium transition-colors rounded-[10px] duration-300 ${
+          className={`py-2 px-6 text-lg font-regular transition-colors rounded-[10px] duration-300 ${
             activeTab === "annual"
               ? "text-white bg-[#2e64fe]"
               : "text-black hover:text-white hover:bg-[#2e64fe]"
           }`}
         >
           Annual{" "}
-          <span className="text-sm">
+          <span className="text-[12px]">
             (Limited Time Offer 6 Months Free)
           </span>
         </button>
@@ -429,26 +429,26 @@ export default function Tabs() {
                                   <button className="w-fit mt-5 bg-[#2e64fe] text-center text-[18px] py-[10px] px-[60px] border-[#2e64fe] border-solid border-[1px] text-white rounded-[100px] hover:bg-[#2E64FE] hover:text-white hover:border-[#2E64FE] hover:-translate-y-2 focus:bg-[#2E64FE] focus:text-white focus:border-[#2E64FE] focus:-translate-y-2 transition-transform duration-300"><a>PROCEED</a></button>
                               </div>
                           </div>
-
-
             </div>
         </>
         )}
       </div>
       <div className="w-full mt-2.5 flex justify-center content-center item-center " >  
-        <div className="w-fit p-5 gap-0 border-[#c8c8c8] border-solid border-2 rounded-[10px] grid grid-cols-2 xl:grid-cols-3 md:grid-col-3 sm:grid-cols-2 align-center justify-center">
-            <div className="flex flex-col gap-0 content-left">
-                <div className="text-[40px] text-black text-left leading-[1.2em]"><b>Trial</b></div>
-                <span className="flex content-end items-baseline text-[30px] text-black gap-2 leading-[1.1em]"><b>$0</b>
-                    <p className="text-[18px] text-black font-medium leading-[1.1em] decoration-none flex content-end items-baseline">per month</p>
-                </span>
+        <div className="w-full p-5 gap-4 border-[#c8c8c8] border-solid border-2 rounded-[10px] grid grid-cols-1 xl:grid-cols-2 xl:max-w-fit xl:gap-10 md:grid-cols-2 md:max-w-fit md:gap-6 sm:grid-cols-1 sm:w-full sm:gap-5 align-center justify-center">
+            <div className="flex gap-6 xl:gap-10 md:gap-8 sm:gap-6">  
+                <div className="flex flex-col gap-0 content-left">
+                    <div className="text-[40px] text-black text-left leading-[1.2em]"><b>Trial</b></div>
+                    <span className="flex content-end items-baseline text-[30px] text-black gap-2 leading-[1.1em]"><b>$0</b>
+                        <p className="text-[18px] text-black font-medium leading-[1.1em] decoration-none flex content-end items-baseline">per month</p>
+                    </span>
+                </div>
+                <span className="flex flex-col gap-0 items-center align-center content-center justify-center text-[40px] text-black leading-[1.2em]"><b>2</b><p className="text-[18px] text-black font-medium decoration-none flex content-end leading-[1.1em]">Credits</p></span>
             </div>
-            <span className="flex flex-col gap-0 items-center align-center content-center justify-center text-[40px] text-black leading-[1.2em]"><b>2</b><p className="text-[18px] text-black font-medium decoration-none flex content-end leading-[1.1em]">Credits</p></span>
             <div className="w-full min-w-full justify-center flex items-center content-center">
                 <button className="w-fit text-center text-[18px] py-2 px-[35px] border-black border-solid border-[1px] text-black rounded-[100px] hover:bg-[#2E64FE] hover:text-white hover:border-[#2E64FE] hover:-translate-y-2 focus:bg-[#2E64FE] focus:text-white focus:border-[#2E64FE] focus:-translate-y-2 transition-transform duration-300"><a>PROCEED</a></button>
-            </div>  
-        </div>   
-      </div>  
+            </div>
+        </div>
+      </div>
     </div>
   );
 }

@@ -81,7 +81,7 @@ export default function FAQ() {
   };
 
   return (
-    <section className="w-full flex flex-col items-center text-left py-20 bg-[linear-gradient(180deg,_#F1F1F9_37%,_#FFFFFF_100%)] md:px-5">
+    <section className="w-full flex flex-col items-center text-left py-15 xl:py-20 md:py-20 sm:py-15 px-3 bg-[linear-gradient(180deg,_#F1F1F9_37%,_#FFFFFF_100%)] md:px-5">
       {/* Section Title */}
       <div className="w-full max-w-[1200px]">
         <h2 className="pt-10 pb-10 text-[48px] text-black font-bold leading-[1.1em]">

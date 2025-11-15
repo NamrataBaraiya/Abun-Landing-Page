@@ -22,7 +22,7 @@ export default function Footer() {
     <footer className="max-w-full w-full px-4 pt-16 flex flex-col items-center">
       {/* Top Section */}
       <div className="max-w-[1150px] w-full justify-between p-4 grid grid-cols-1 gap-6 rounded-[20px] bg-[#FAF1E3] xl:gap-0 xl:p-12 md:p-12 sm:p-8 xl:grid-cols-[70%_30%] md:grid-cols-1 md:gap-6 sm:grid-cols-1">
-        <div className="mx-auto space-y-6 flex flex-col gap-0 ">
+        <div className="mx-auto order-2 xl:order-1 md:order-1 sm:order-1 space-y-6 flex flex-col gap-0 ">
           <h3 className="text-[28px] text-center leading-[1.1em] font-bold xl:text-left xl:text-[48px] md:text-[32px] md:text-center sm:text-[28px]">
             The Secret Tool used by SEO & Growth Marketing Experts.
           </h3>
@@ -31,19 +31,19 @@ export default function Footer() {
           </h2>
 
           {/* Works With */}
-          <div className="flex flex-col gap-5 items-center text-center xl:flex md:flex sm:flex">
+          <div className="flex flex-col gap-5 items-center text-center xl:flex xl:flex-row md:flex md:flex-row sm:flex sm:flex:row">
             <a
               href="https://app.abun.com/auth/signup"
-              className="py-2 px-4 bg-[#2E64FE] text-white font-[Geist] text-[16px] font-medium leading-6 rounded-[11px] hover:bg-[#6088f5e9] transition"
+              className="w-full order-3 xl:order-1 md:order-1 sm:order-1 xl:w-[fit] md:w-[fit] sm:w-[fit] py-2 px-4 bg-[#2E64FE] text-white font-[Geist] text-[16px] font-medium leading-6 rounded-[11px] hover:bg-[#6088f5e9] transition"
             >
               START FREE
             </a>
-            <p className="text-[14px] font-medium text-[rgb(102,85,66)]">
+            <p className="text-[14px] order-2 font-medium text-[rgb(102,85,66)]">
               Works with:
             </p>
 
             {/* Continuous Horizontal Carousel */}
-            <div className="relative max-w-[300px] overflow-hidden xl:w-[450px] md:w-[450px] sm:w-[400px]">
+            <div className="relative order-1 xl:order-3 md:order-3 sm:order-3 max-w-[300px] overflow-hidden xl:w-[450px] md:w-[450px] sm:w-[400px]">
               <div className="flex animate-scroll whitespace-nowrap">
                 {[...logos, ...logos].map((logo, i) => (
                   <div
@@ -65,19 +65,19 @@ export default function Footer() {
         </div>
 
         {/* Reviews */}
-        <div className="flex flex-row justify-center gap-8 text-center xl:flex-col lg:flex-col md:flex-row sm:flex-row">
+        <div className="flex order-1 xl:order-2 md:order-2 sm:order-2 flex-row justify-center gap-8 text-center xl:flex-col lg:flex-col md:flex-row sm:flex-row">
           {[
             "“biggest value bomb”",
             "“my entire team can’t stop using it”",
             "“helped us scale & grow”",
           ].map((text, i) => (
             <div key={i}>
-              <Image
+              <Image 
                 src="/img/rating-star.png"
                 alt="Rating stars"
                 width={140}
                 height={30}
-                className="mx-auto"
+                className="mx-auto w-[80px] xl:w-[140px] md:w-[100px] sm:w-[80px]"
               />
               <h3 className="text-[12px] mt-3 xl:text-lg md:text-lg sm:text-[12px]">{text}</h3>
             </div>
@@ -116,7 +116,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="w-full grid grid-cols-2 gap-2 xl:grid-cols-3 md:grid-cols-3 sm:grid-cols-3 justify-between xl:justify-between md:justify-center xl:gap-0 md:gap-12 sm:gap-10">    
+        <div className="w-full grid grid-cols-2 gap-3 xl:grid-cols-3 md:grid-cols-3 sm:grid-cols-3 justify-between xl:justify-between md:justify-center xl:gap-0 md:gap-12 sm:gap-10">    
         {/* Column 2 */}
         <ul className="space-y-2 text-black flex flex-col gap-2">
           <li><a href="#faq">FAQ</a></li>
@@ -146,16 +146,16 @@ export default function Footer() {
       </div>
 
       {/* Bottom Section */}
-      <div className="max-w-[1150px] xl:w-[1150px] pt-10 flex flex-col justify-between items-center gap-8 text-[11px] text-black xl:gap-8 xl:flex xl:flex-row md:flex-col md:gap-4 sm:flex-col ">
-        <div className="flex flex-wrap justify-center gap-8">
+      <div className="max-w-[1150px] xl:w-[1150px] pt-10 flex flex-col justify-between items-center gap-4 text-[11px] text-black xl:gap-8 xl:flex xl:flex-row md:flex-col md:gap-4 sm:flex-col ">
+        <div className="flex flex-wrap justify-center gap-8 order:3 xl:order:1 md:order:1 sm:order-1">
           <a href="/terms-conditions">Terms & Conditions</a>
           <a href="/privacy-policy">Privacy Policy</a>
         </div>
-        <div className="flex flex-col items-center gap-0 xl:grid-row md:grid-row sm:grid-row">
+        <div className="flex flex-col items-center gap-0 order:1 xl:order:2 md:order:2 sm:order-2 xl:flex-row md:flex-row sm:flex-row">
           <Image className="mt-2" src="/img/image-123.png" alt="Microsoft" width={250} height={100} />
           <Image src="/img/nv.png" alt="NVIDIA" width={150} height={60} />
         </div>
-        <p className="text-black text-[18px] text-center md:text-right">
+        <p className="text-black text-[18px] text-center md:text-right order:2 xl:order:3 md:order:3 sm:order-3">
           Made with ❤️ by{" "}
           <a href="https://draftss.com/?ref=abun" className="underline decoration-black text-[#766bea]">
             Draftss.com

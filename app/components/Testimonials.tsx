@@ -173,7 +173,7 @@ export default function Testimonials() {
 
   return (
       <section className="pt-20 w-full flex flex-col justify-center items-center text-center bg-[#fcfbf3]">
-        <div className="w-full flex flex-col justify-center items-center gap-6 px-6">
+        <div className="w-full flex flex-col justify-center items-center gap-6 px-2 xl:px-6 md:px-4 sm:px-2">
             <h2 className=" pb-10 text-[48px] text-black font-bold leading-[1.1em]">Everyone Loves our Product & Support</h2>
         </div>     
 
@@ -190,12 +190,12 @@ export default function Testimonials() {
                 {t.avatar}
                 </div>
                 <div className="flex flex-col gap-1">
-                <p className="font-semibold text-gray-900 text-[20px] text-left">{t.name}</p>
-                <div className="flex gap-2 text-[14px] font-medium text-gray-500">
+                <p className="font-semibold text-gray-900 text-[16px] text-left xl:text-[20px] md:text-[18px] sm:text-[16px]">{t.name}</p>
+                <div className="flex gap-2 text-[12px] xl:text-[14px] md:text-[12px] font-medium text-gray-500">
                     <span>{t.reviews}</span>
                     <div className="flex gap-1">
                     <Image src="/img/pin.png" alt="Location" width={18} height={18} className="opacity-70" />
-                    <span className="text-[14px]">{t.location}</span>
+                    <span className="text-[12px] xl:text-[14px] md:text-[12px]">{t.location}</span>
                     </div>
                 </div>
                 </div>
@@ -205,7 +205,7 @@ export default function Testimonials() {
 
             {/* 2️⃣ Comment */}
             <div className="flex flex-col text-left gap-5 flex-1">
-                <Image src="/img/client-rating.jpg" alt="Stars" width={150} height={28} />
+                <Image className="w-[80px] xl:w-[150px] md:w-[100px] sm:w-[80px]" src="/img/client-rating.jpg" alt="Stars" width={150} height={28} />
                 <h3 className="font-semibold text-black text-[16px] xl:text-[22px] md:text-[22px] leading-[1.3em] xl:leading-6 md:leading-6 ">{t.title}</h3>
                 <p className="text-[#64698e] text-[16px] xl:text-[20px] md:text-[20px] font-medium leading-[1.3em] xl:leading-6 md:leading-6">{t.text}</p>
             </div>
@@ -230,7 +230,7 @@ export default function Testimonials() {
         ))}
         </div>
         {/* Bottom Glow Effect */}
-      <div className="mt-[-420px] left-0 w-full h-[400px] bg-gradient-to-b from-[#1D020200] via-[#ffffff80] to-white pointer-events-none z-2" />
+      <div className="mt-[-220px] left-0 w-full h-[400px] xl:h-[400px] xl:mt-[-420px] md:h-[200px] md:mt-[-220px] sm:h-[200px] bg-gradient-to-b from-[#1D020200] via-[#ffffff80] to-white pointer-events-none z-2" />
         
     </section>
   );

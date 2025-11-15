@@ -36,32 +36,32 @@ export default function Home() {
     <main className="w-full pb-12 font-Geist flex min-h-screen flex-col items-center justify-center bg-white text-black dark:bg-black">
       <Header />
       {/* SECTION 1 */}
-      <section className="py-20 w-full flex flex-col justify-center items-center text-center gap-6 xl:py-30 md:py-30 sm:py-30">
+      <section className="py-8 pb-5 xl:pb-0 w-full flex flex-col justify-center items-center text-center gap-6 xl:py-30 md:py-30 sm:py-30">
         <div className="max-w-[1200px] w-full flex flex-col justify-center items-center gap-6 px-6">
           
-          <div className="max-w-[1100px] grid grid-cols-3 gap-2 flex-wrap items-center justify-between text-center xl:grid-cols-1 xl:gap-28 md:grid-cols-3 md:gap-10 sm:grid-cols-3 sm:gap-5">
+          <div className="max-w-[1100px] grid grid-cols-3 gap-2 flex-wrap items-center justify-between text-center xl:grid-cols-3 xl:gap-20 md:grid-cols-3 md:gap-6 sm:grid-cols-3 sm:gap-5">
             
             <div className="flex flex-col items-center gap-2 text-center">
-              <Image src="/img/rating-star.png" alt="Rating Star" width={115} height={20} />
+              <Image className="w-[80px] xl:w-[115px] md:w-[100px] sm:w-[80px]" src="/img/rating-star.png" alt="Rating Star" width={115} height={20} />
               <p className="text-[rgb(102,85,66)] text-[12px] xl:text-[20px] md:text-[14px] sm:text-[12px]">“biggest value bomb”</p>
             </div>
 
             <div className="flex flex-col items-center gap-2 text-center">
-              <Image src="/img/rating-star.png" alt="Rating Star" width={115} height={20} />
+              <Image className="w-[80px] xl:w-[115px] md:w-[100px] sm:w-[80px]" src="/img/rating-star.png" alt="Rating Star" width={115} height={20} />
               <p className="text-[rgb(102,85,66)] text-[12px] xl:text-[20px] md:text-[14px] sm:text-[12px]">“my entire team can’t stop using it”</p>
             </div>
 
             <div className="flex flex-col items-center gap-2 text-center">
-              <Image src="/img/rating-star.png" alt="Rating Star" width={115} height={20} />
+              <Image className="w-[80px] xl:w-[115px] md:w-[100px] sm:w-[80px]" src="/img/rating-star.png" alt="Rating Star" width={115} height={20} />
               <p className="text-[#665542] text-[12px] xl:text-[20px] md:text-[14px] sm:text-[12px]">“helped us scale & grow”</p>
             </div>
           </div>
 
-          <h1 className="font-sans text-[40px] font-bold leading-[1.1em] tracking-[-1px] text-black xl:text-[90px] md:text-[60px] sm:text-[40px]">
-            The All-In-One Toolkit for <br /> SEO & Growth Marketing.
+          <h1 className="font-sans text-[42px] font-bold leading-[1.4em] tracking-[-1px] text-black xl:text-[90px] xl:max-w-[1100px] md:text-[60px] sm:text-[40px]">
+            The All-In-One Toolkit for SEO & Growth Marketing.
           </h1>
 
-          <p className="text-[20px] text-black font-medium xl:text-[32px] md:text-[22px] sm:text-[20px]">
+          <p className="text-[20px] leading-[1.5em] text-black font-medium xl:text-[32px] xl:leading-[1.6em] md:text-[22px] md:leading-[1.6em] sm:text-[30px] sm:leading-[1.4em]">
             Used by 5,325 Marketers, Founders, SEO Experts
             <br />
             to Drive Traffic, Generate Leads, Rank Faster & Achieve Solid Business Growth
@@ -75,7 +75,7 @@ export default function Home() {
             Free Accounts available only for a Limited Time
           </p>
 
-          <div className="flex flex-row items-center justify-center gap-2 text-center">
+          <div className="flex flex-col items-center justify-center text-center xl:flex-row  md:flex-row sm:flex-col">
             <Image className="pt-2" src="/img/image-123.png" alt="" width={265} height={80} />
             <Image src="/img/nv.png" alt="" width={152} height={66} />
           </div>
@@ -83,12 +83,12 @@ export default function Home() {
       </section>
 
       {/* SECTION 2 */}
-      <section className="pt-30 w-full flex flex-col justify-center items-center text-center bg-gradient-to-b from-[#F1F1F9]/80 to-[#FFFFFF]/100">
-        <div className="max-w-[1200px] w-full flex flex-col justify-center items-center gap-6 px-6 xl:px-6 md:px-3">
+      <section className="pt-15 xl:pt-30 md:pt-30 sm:pt-15 w-full flex flex-col justify-center items-center text-center bg-gradient-to-b from-[#F1F1F9]/80 to-[#FFFFFF]/100">
+        <div className="max-w-[1200px] w-full flex flex-col justify-center items-center gap-6 px-3 xl:px-6 md:px-3">
           <p className="text-[18px] font-medium leading-[1.1em] tracking-[-0.5px] text-[#4A4583]">AI SEO & Marketing Tools</p>
-          <h2 className="text-[48px] font-bold leading-[1.1em] tracking-[-1px] text-black">Start Scaling your Traffic</h2>
+          <h2 className="text-[40px] xl:text-[48px] md:text-[48px] sm:text-[40px] font-bold leading-[1.1em] tracking-[-1px] text-black">Start Scaling your Traffic</h2>
 
-          <div className="w-full pt-7 max-w-7xl grid grid-cols-1 xl:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-5 xl:gap-5 md:gap-2 items-start justify-center text-center ">
+          <div className="w-full pt-7 max-w-7xl grid grid-cols-1 gap-0 xl:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-5 xl:gap-5 md:gap-2 items-start justify-center text-center ">
             {/* 1 */}
             <div className="flex p-[25px] min-h-[220px] flex-col gap-3 item-left text-left bg-[#FFFFFF] border border-[#D2D2EB] rounded-[14px] shadow-[0_3px_3px_0_rgba(19,48,66,0.07)] transition-transform duration-300 hover:scale-[1.02] hover:cursor-default">
               <Image className="p-2.5 bg-[#f1f1f9] rounded-[10px]" src="/img/Script-2-Streamline-Plump.png" alt="AI Articles" width={40} height={40} />
@@ -256,7 +256,7 @@ Guest Post Finder</p>
       </section>
 
       {/* ========================== SECTION 3 ========================== */}
-      <section className="py-30 w-full flex flex-col justify-center items-center text-center bg-white">
+      <section className="py-15 xl:py-30 md:py-20 sm:py-15 w-full flex flex-col justify-center items-center text-center bg-white">
         <div className="max-w-[1200px] w-full flex flex-col justify-center items-center gap-5 px-6">
           
           {/* Animated Counter */}
@@ -266,7 +266,7 @@ Guest Post Finder</p>
                 {formattedCount}
               </span>
             </div>
-            <p className="text-[29px] text-black font-medium mt-6 xl:text-[29px] md:text-[20px]">
+            <p className="text-[18px] text-black font-medium mt-6 xl:text-[29px] md:text-[20px] sm:text-[18px]">
               Our users love us 2.6 Billion.<br/><br/>That’s the amount of AI/LLM tokens used cumulatively by our users.
             </p>
             <ImageCarousel />            
@@ -276,8 +276,8 @@ Guest Post Finder</p>
 
           <div className="w-full p-8 xl:p-16 md:p-16 grid space-between grid-cols-1 gap-5 xl:grid-cols-[50%_40%] xl:p-16 md:p-16 md:grid-cols-1 sm:p-5 sm:grid-cols-1 rounded-[20px] bg-[#FAF1E3] ">
               <div className="flex flex-col gap-5 text-center xl:text-left md:text-center sm:text-center">
-                <h3 className="text-[40px] text-[#4F340A] leading-[1.1em] font-semibold">We integrate with all the  latest tech, so you are not left behind.</h3>
-                <p className="text-[20px] text-[#8A5E19] leading-[1.4em]" >Our system is built to support top platforms<br/> today, and ready for what’s next tomorrow.</p>
+                <h3 className="text-[26px] text-[#4F340A] leading-[1.1em] font-medium xl:text-[40px] md:text-[40px] sm:text-[26px]">We integrate with all the  latest tech, so you are not left behind.</h3>
+                <p className="text-[16px] xl:text-[20px] md:text-[20px] sm:text-[18px] text-[#8A5E19] leading-[1.4em]" >Our system is built to support top platforms<br/> today, and ready for what’s next tomorrow.</p>
               </div>
               <div className="flex justify-center xl:justify-end md:justify-center sm:justify:center">
                 <Image src="/img/Software-pack.png" alt="Software Pack" width={900} height={400} />
@@ -285,11 +285,11 @@ Guest Post Finder</p>
             
           </div>
 
-          <div className="w-full grid grid-cols-1 gap-7 pt-4 xl:grid-col-2 md:grid-col-2 sm:grid-col-1">
-              <div className="flex flex-col pt-4 pb-2 gap-3 text-center rounded-[20px] bg-[#e4f1ff] ">
+          <div className="w-full grid grid-cols-1 gap-7 pt-4 xl:grid-cols-2 md:grid-cols-2 sm:grid-cols-1">
+              <div className="flex flex-col px-5 pt-4 pb-2 gap-3 text-center rounded-[20px] bg-[#e4f1ff] ">
                 <CMS_Carousel />    
                 <p className="text-[35px] text-[#264363] leading-[1.1em] font-bold">Full Fledged Integrations</p>
-                <p className="text-[16px] xl:text-[20px] md:text-[20px] text-[#2463A8] leading-[1.4em]" >So simple, you’ll forget it’s even integrated.<br/> Built for teams that hate complexity but <br />love when things just work.</p>
+                <p className="text-[14px] xl:text-[20px] md:text-[20px] text-[#2463A8] leading-[1.4em]" >So simple, you’ll forget it’s even integrated.<br/> Built for teams that hate complexity but <br />love when things just work.</p>
                 <div className="flex justify-center">
                   
                   <a href="https://abun.com/integrations" className="inline-flex items-center gap-2 px-6 py-1 rounded-full text-sm font-medium transition-all duration-300 hover: hover:gap-3">
@@ -303,7 +303,7 @@ Guest Post Finder</p>
               <div className="flex flex-col p-8 gap-3 text-center rounded-[20px] bg-[#e4e7ff] ">
                 <TextSlider /> 
                 <p className="pt-5 text-[35px] text-[#2A3062] leading-[1.1em] font-bold">Multi Language Support</p>
-                <p className="text-[16px] xl:text-[20px] md:text-[20px] text-[#4B539A] leading-[1.4em]" >Whether it's English, Español, or Emoji, we<br/> speak your customers’ language, so<br /> nothing gets lost in translation.</p>
+                <p className="text-[14px] xl:text-[20px] md:text-[20px] text-[#4B539A] leading-[1.4em]" >Whether it's English, Español, or Emoji, we<br/> speak your customers’ language, so<br /> nothing gets lost in translation.</p>
                 <div className="flex justify-center">
                   <a href="https://abun.com/integrations" className="inline-flex items-center gap-2 text-white px-6 py-1 rounded-full text-sm font-medium transition-all duration-300 hover:gap-3">
                                     
@@ -317,7 +317,7 @@ Guest Post Finder</p>
           <h2 className="pt-8 xl:pt-18 md:pt-12 sm:pt-8 text-[35px] text-black font-medium leading-[1.1em]">We are your unfair advantage.</h2>
           <p className="text-[35px] text-[#2E64FE] font-medium leading-[1.1em]" >Our users see guaranteed growth <br/>within 30 days.</p>
 
-          <div className="grid grid-cols-1 xl:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 gap-2 py-12 text-[16px] text-black xl:text-[25px] md:text-[16px] sm:text-[16px]">
+          <div className="grid grid-cols-1 xl:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 gap-2 py-8 text-[16px] text-black xl:text-[25px] xl:py-12 md:text-[16px] md:py-8 sm:text-[16px] sm:py-8 ">
             <div className="flex flex-col gap-2 xl:gap-4 md:gap-4 ">
               <p>25+ Tools</p>
               <p>Feature Rich Tools</p>
@@ -357,8 +357,8 @@ Guest Post Finder</p>
       <Testimonials />
 {/* ========================== SECTION 5 - Price Table ========================== */}
       <section className="py-30 w-full flex flex-col justify-center items-center text-center bg-white">
-        <div className="max-w-[1350px] w-full flex flex-col justify-center items-center gap-6 px-6">
-          <h2 className="pt-16 pb-6 text-[48px] text-black font-bold leading-[1.1em]">Access All Tools for One Price.</h2>
+        <div className="max-w-[1350px] w-full flex flex-col justify-center items-center gap-6 px-3">
+          <h2 className="pt-16 pb-6 text-[40px] xl:text[48px] md:text-[48px] sm:text-[40px] text-black font-bold leading-[1.1em]">Access All Tools for One Price.</h2>
           
 {/*------------------------------------------price table component----------------------------------------------------------------------------------------------------------  */}
           <PriceTab />  
