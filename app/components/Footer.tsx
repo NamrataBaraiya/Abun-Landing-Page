@@ -26,15 +26,18 @@ export default function Footer() {
           <h3 className="text-[28px] text-center leading-[1.1em] font-bold xl:text-left xl:text-[48px] md:text-[32px] md:text-center sm:text-[28px]">
             The Secret Tool used by SEO & Growth Marketing Experts.
           </h3>
-          <h2 className="text-[16px] text-center leading-[1.4em] font-medium text-[rgb(102,85,66)] xl:text-[22px] xl:text-left md:text-[18px] md:text-center sm:text-[16px]">
+          <h2 className="hidden text-[16px] text-center leading-[1.4em] font-medium text-[rgb(102,85,66)] xl:text-[22px] xl:text-left md:text-[18px] md:text-center sm:text-[16px]">
             Scale your Sales & Marketing with our all in one AI<br /> tools that give you an unfair advantage.
+          </h2>
+          <h2 className="text-[16px] xl:hidden text-center leading-[1.4em] font-medium text-[rgb(102,85,66)] xl:text-[22px] xl:text-left md:text-[18px] md:text-center sm:text-[16px]">
+            Scale your Sales & Marketing with our all in one AI tools that give you an unfair advantage.
           </h2>
 
           {/* Works With */}
           <div className="flex flex-col gap-5 items-center text-center xl:flex xl:flex-row md:flex md:flex-row sm:flex sm:flex:row">
             <a
               href="https://app.abun.com/auth/signup"
-              className="w-full order-3 xl:order-1 md:order-1 sm:order-1 xl:w-[250px] md:w-[250] sm:w-[250] py-2 px-4 bg-[#2E64FE] text-white font-[Geist] text-[16px] font-medium leading-6 rounded-[11px] hover:bg-[#6088f5e9] transition"
+              className="w-full order-3 xl:order-1 md:order-1 sm:order-1 xl:w-[200px] md:w-[200] sm:w-[200] py-3 px-4 bg-[#2E64FE] text-white font-[Geist] text-[16px] font-medium leading-6 rounded-[11px] hover:bg-[#6088f5e9] transition"
             >
               START FREE
             </a>

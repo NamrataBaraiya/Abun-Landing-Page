@@ -61,9 +61,13 @@ export default function Home() {
             The All-In-One Toolkit for SEO & Growth Marketing.
           </h1>
 
-          <p className="flex-row xl:flex-col md:flex-row sm:flex-row text-[20px] leading-[1.4em] text-black font-medium xl:text-[32px] xl:leading-[1.6em] md:text-[22px] md:leading-[1.6em] sm:text-[30px] sm:leading-[1.4em]">
-            <span>Used by 5,325 Marketers, Founders, SEO Experts</span>           
-            <span>to Drive Traffic, Generate Leads, Rank Faster & Achieve Solid Business Growth</span>
+          <p className="hidden text-[20px] leading-[1.4em] text-black font-medium  xl:text-[32px] xl:leading-[1.6em] md:text-[22px] md:leading-[1.6em] sm:text-[30px] sm:leading-[1.4em]">
+            Used by 5,325 Marketers, Founders, SEO Experts<br/>          
+            to Drive Traffic, Generate Leads, Rank Faster & Achieve Solid Business Growth
+          </p>
+          
+          <p className="text-[20px] leading-[1.4em] text-black font-medium xl:hidden xl:text-[32px] xl:leading-[1.6em] md:text-[22px] md:leading-[1.6em] sm:text-[30px] sm:leading-[1.4em]">
+            Used by 5,325 Marketers, Founders, SEO Experts to Drive Traffic, Generate Leads, Rank Faster & Achieve Solid Business Growth
           </p>
 
           <button className="mt-5 text-black text-[16px] xl:text-[20px] md:text-[20px] transition-transform duration-300 ease-out hover:-translate-y-2 bg-[#FACE49] rounded-[11px] px-[30px] py-4 animate-pulse-shadow ">
@@ -276,7 +280,9 @@ Guest Post Finder</p>
           <div className="w-full p-8 xl:p-16 md:p-16 grid space-between grid-cols-1 gap-5 xl:grid-cols-[50%_40%] xl:p-16 md:p-16 md:grid-cols-1 sm:p-5 sm:grid-cols-1 rounded-[20px] bg-[#FAF1E3] ">
               <div className="flex flex-col gap-5 text-center xl:text-left md:text-center sm:text-center">
                 <h3 className="text-[26px] text-[#4F340A] leading-[1.1em] font-medium xl:text-[40px] md:text-[40px] sm:text-[26px]">We integrate with all the  latest tech, so you are not left behind.</h3>
-                <p className="text-[16px] xl:text-[20px] md:text-[20px] sm:text-[18px] text-[#8A5E19] leading-[1.4em]" >Our system is built to support top platforms<br/> today, and ready for what’s next tomorrow.</p>
+                <p className="hidden text-[16px] xl:text-[20px] md:text-[20px] sm:text-[18px] text-[#8A5E19] leading-[1.4em]" >Our system is built to support top platforms<br/> today, and ready for what’s next tomorrow.</p>
+                <p className="text-[16px] xl:hidden xl:text-[20px] md:text-[20px] sm:text-[18px] text-[#8A5E19] leading-[1.4em]" >Our system is built to support top platforms today, and ready for what’s next tomorrow.</p>
+              
               </div>
               <div className="flex justify-center xl:justify-end md:justify-center sm:justify:center">
                 <Image src="/img/Software-pack.png" alt="Software Pack" width={900} height={400} />
