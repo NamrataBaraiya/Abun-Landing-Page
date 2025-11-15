@@ -435,7 +435,7 @@ export default function Tabs() {
       </div>
       <div className="w-full mt-2.5 flex justify-center content-center item-center " >  
         <div className="w-full p-5 gap-4 border-[#c8c8c8] border-solid border-2 rounded-[10px] grid grid-cols-1 xl:grid-cols-2 xl:max-w-fit xl:gap-10 md:grid-cols-2 md:max-w-fit md:gap-6 sm:grid-cols-1 sm:w-full sm:gap-5 align-center justify-center">
-            <div className="flex gap-6 xl:gap-10 md:gap-8 sm:gap-6">  
+            <div className="flex gap-6 xl:gap-10 md:gap-8 sm:gap-6 justify-between">  
                 <div className="flex flex-col gap-0 content-left">
                     <div className="text-[40px] text-black text-left leading-[1.2em]"><b>Trial</b></div>
                     <span className="flex content-end items-baseline text-[30px] text-black gap-2 leading-[1.1em]"><b>$0</b>

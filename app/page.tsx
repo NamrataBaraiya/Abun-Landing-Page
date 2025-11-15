@@ -36,8 +36,8 @@ export default function Home() {
     <main className="w-full pb-12 font-Geist flex min-h-screen flex-col items-center justify-center bg-white text-black dark:bg-black">
       <Header />
       {/* SECTION 1 */}
-      <section className="py-8 pb-5 xl:pb-0 w-full flex flex-col justify-center items-center text-center gap-6 xl:py-30 md:py-30 sm:py-30">
-        <div className="max-w-[1200px] w-full flex flex-col justify-center items-center gap-6 px-6">
+      <section className="py-8 pb-15 xl:pb-0 w-full flex flex-col justify-center items-center text-center gap-6 xl:py-30 md:py-30 sm:py-30">
+        <div className="max-w-[1200px] w-full flex flex-col justify-center items-center gap-3 px-6 xl:gap-6 md:gap-4 sm:gap-3">
           
           <div className="max-w-[1100px] grid grid-cols-3 gap-2 flex-wrap items-center justify-between text-center xl:grid-cols-3 xl:gap-20 md:grid-cols-3 md:gap-6 sm:grid-cols-3 sm:gap-5">
             
@@ -57,14 +57,13 @@ export default function Home() {
             </div>
           </div>
 
-          <h1 className="font-sans text-[42px] font-bold leading-[1.4em] tracking-[-1px] text-black xl:text-[90px] xl:max-w-[1100px] md:text-[60px] sm:text-[40px]">
+          <h1 className="font-sans text-[42px] font-bold leading-[1.3em] tracking-[-1px] text-black xl:text-[90px] xl:max-w-[1100px] md:text-[60px] sm:text-[40px]">
             The All-In-One Toolkit for SEO & Growth Marketing.
           </h1>
 
-          <p className="text-[20px] leading-[1.5em] text-black font-medium xl:text-[32px] xl:leading-[1.6em] md:text-[22px] md:leading-[1.6em] sm:text-[30px] sm:leading-[1.4em]">
-            Used by 5,325 Marketers, Founders, SEO Experts
-            <br />
-            to Drive Traffic, Generate Leads, Rank Faster & Achieve Solid Business Growth
+          <p className="flex-row xl:flex-col md:flex-row sm:flex-row text-[20px] leading-[1.4em] text-black font-medium xl:text-[32px] xl:leading-[1.6em] md:text-[22px] md:leading-[1.6em] sm:text-[30px] sm:leading-[1.4em]">
+            <span>Used by 5,325 Marketers, Founders, SEO Experts</span>           
+            <span>to Drive Traffic, Generate Leads, Rank Faster & Achieve Solid Business Growth</span>
           </p>
 
           <button className="mt-5 text-black text-[16px] xl:text-[20px] md:text-[20px] transition-transform duration-300 ease-out hover:-translate-y-2 bg-[#FACE49] rounded-[11px] px-[30px] py-4 animate-pulse-shadow ">
@@ -88,7 +87,7 @@ export default function Home() {
           <p className="text-[18px] font-medium leading-[1.1em] tracking-[-0.5px] text-[#4A4583]">AI SEO & Marketing Tools</p>
           <h2 className="text-[40px] xl:text-[48px] md:text-[48px] sm:text-[40px] font-bold leading-[1.1em] tracking-[-1px] text-black">Start Scaling your Traffic</h2>
 
-          <div className="w-full pt-7 max-w-7xl grid grid-cols-1 gap-0 xl:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-5 xl:gap-5 md:gap-2 items-start justify-center text-center ">
+          <div className="w-full pt-3 xl:pt-7 md:pt-6 max-w-7xl grid grid-cols-1 gap-0 xl:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-5 xl:gap-5 md:gap-2 items-start justify-center text-center ">
             {/* 1 */}
             <div className="flex p-[25px] min-h-[220px] flex-col gap-3 item-left text-left bg-[#FFFFFF] border border-[#D2D2EB] rounded-[14px] shadow-[0_3px_3px_0_rgba(19,48,66,0.07)] transition-transform duration-300 hover:scale-[1.02] hover:cursor-default">
               <Image className="p-2.5 bg-[#f1f1f9] rounded-[10px]" src="/img/Script-2-Streamline-Plump.png" alt="AI Articles" width={40} height={40} />
@@ -300,7 +299,7 @@ Guest Post Finder</p>
                 </div>
               </div>
 
-              <div className="flex flex-col p-8 gap-3 text-center rounded-[20px] bg-[#e4e7ff] ">
+              <div className="flex flex-col p-3 xl:p-8 md:p-8 gap-3 text-center rounded-[20px] bg-[#e4e7ff] ">
                 <TextSlider /> 
                 <p className="pt-5 text-[35px] text-[#2A3062] leading-[1.1em] font-bold">Multi Language Support</p>
                 <p className="text-[14px] xl:text-[20px] md:text-[20px] text-[#4B539A] leading-[1.4em]" >Whether it's English, Español, or Emoji, we<br/> speak your customers’ language, so<br /> nothing gets lost in translation.</p>
@@ -317,7 +316,7 @@ Guest Post Finder</p>
           <h2 className="pt-8 xl:pt-18 md:pt-12 sm:pt-8 text-[35px] text-black font-medium leading-[1.1em]">We are your unfair advantage.</h2>
           <p className="text-[35px] text-[#2E64FE] font-medium leading-[1.1em]" >Our users see guaranteed growth <br/>within 30 days.</p>
 
-          <div className="grid grid-cols-1 xl:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 gap-2 py-8 text-[16px] text-black xl:text-[25px] xl:py-12 md:text-[16px] md:py-8 sm:text-[16px] sm:py-8 ">
+          <div className="grid grid-cols-1 xl:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 gap-2 py-4 xl:py-8 md:py-6 sm:py-4 text-[16px] text-black xl:text-[25px] xl:py-12 md:text-[16px] md:py-8 sm:text-[16px] sm:py-8 ">
             <div className="flex flex-col gap-2 xl:gap-4 md:gap-4 ">
               <p>25+ Tools</p>
               <p>Feature Rich Tools</p>
