@@ -66,7 +66,7 @@ export default function Home() {
             to Drive Traffic, Generate Leads, Rank Faster & Achieve Solid Business Growth
           </p>
           
-          <p className="text-[20px] leading-[1.4em] text-black font-medium xl:hidden xl:text-[32px] xl:leading-[1.6em] md:text-[22px] md:leading-[1.6em] sm:text-[30px] sm:leading-[1.4em]">
+          <p className="text-[20px] leading-[1.4em] text-black font-medium xl:hidden xl:text-[32px] xl:leading-[1.6em] md:hidden md:text-[22px] md:leading-[1.6em] sm:text-[30px] sm:leading-[1.4em]">
             Used by 5,325 Marketers, Founders, SEO Experts to Drive Traffic, Generate Leads, Rank Faster & Achieve Solid Business Growth
           </p>
 

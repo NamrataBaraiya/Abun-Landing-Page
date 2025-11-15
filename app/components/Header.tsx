@@ -34,7 +34,7 @@ export default function Header() {
             alt="Abun Logo"
             width={170}
             height={50}
-            className="w-[80px] object-contain xl:w-[170px] md:w-[150px] sm:w-[100px]"
+            className="w-[90px] object-contain xl:w-[170px] md:w-[150px] sm:w-[100px]"
           />
         </Link>
 
@@ -66,7 +66,7 @@ export default function Header() {
 
           {/* Hamburger Icon */}
           <button
-            className="md:hidden flex flex-col gap-1"
+            className="md:hidden flex flex-col gap-1 border-2 border-[#2E64FE] rounded-6 p-4"
             onClick={() => setIsMenuOpen(true)}
             aria-label="Toggle Menu"
           >
